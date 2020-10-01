@@ -1,0 +1,179 @@
+@bl:#13100D;
+@w:#ffffff;
+@bc1:#423b3b;
+@hc:#90D7D2;
+@m:20px;
+
+.hc{
+	color:@hc;
+	.trans4;
+}
+.white{
+	color:#ffffff;
+}
+.w100{
+	width: 100%;
+}
+.positionA{
+	position:absolute;
+}
+.column{
+	display:flex;
+	flex-direction: column;
+}
+.flex{
+	display: flex;
+}
+
+.allcenter{
+	justify-content: center;
+	align-items:center;
+	display: flex;
+}
+.thefont{
+	font-family: 'Gloss_And_Bloom.ttf';
+	text-transform: none;
+}
+.trans4{
+	transition: .4s;
+}
+.thefont{
+	font-family: 'Introcond';
+	font-size:20px;
+}
+.thefontbold{
+	font-family: 'IntrocondBold';
+	font-size:20px;
+}
+@font-face{
+font-family: 'Introcond';
+src: url('../fonts/introCond.ttf');
+font-weight: normal;
+font-style: normal;
+}
+@font-face{
+	font-family: 'IntrocondBold';
+	src: url('../fonts/introCondBold.ttf');
+	font-weight: normal;
+	font-style: normal;
+	}
+
+body, p{
+	margin:0;
+	padding: 0;
+	.thefont;
+}
+h1{
+	text-align: center;
+}
+a{
+	text-decoration: none;
+	color:@bl;
+}
+b{
+	font-family: 'IntrocondBold';
+}
+header{
+	.flex;
+	justify-content: space-between;
+	align-items: center;
+	padding:20px 40px;
+}
+.logo__div{
+	width: 300px;
+	text-align: left;
+	img{
+		width: 150px;
+	}
+}
+.header__menu{
+	.w100;
+	ul{
+		padding-left:0;
+		.flex;
+		list-style-type: none;
+		li{
+			margin-right:5vw;
+			a{
+				&:hover{
+					.hc;
+				}
+			}
+		}
+	}
+}
+.header__icons{
+	.flex;
+	float:right;
+	a{
+		svg{
+			height: 25px;
+    	margin: 0 3px;
+		}
+	}
+}
+footer{
+	.white;
+	height: 50vh;
+	background:@bl;
+	padding:40px;
+	.flex;
+	a{
+		.white;
+	}
+}
+.footer__div{
+	text-align: left;
+	height: 100%;
+	flex:1;
+	&:first-child{
+		.column;
+		justify-content: space-between;
+	}
+	&:nth-child(2){
+		.column;
+	}
+	&:last-child{
+		.flex;
+		div{
+			text-align: left;
+			flex:1;
+		}
+	}	
+}
+.logo__footer{
+	width: 40%;
+}
+
+.slim{
+	font-size: 0.7em;
+}
+
+.footer__div__two{
+	a{
+		margin-bottom: @m;
+	}
+}
+
+.footer__div__three{
+	div{
+		&:last-child{
+			.column;
+			justify-content: space-between;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and(max-width: 768px) {
+	
+}
