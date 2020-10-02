@@ -65,76 +65,83 @@
       <div class="catalog__item">
         <img src="/images/catalog/1.jpg" alt="">
         <p>Название товара номер один</p>
-        <p>12&nbsp;384Р</p>
+        <span>12&nbsp;384Р</span>
       </div>
 
       <div class="catalog__item">
         <img src="/images/catalog/2.jpg" alt="">
         <p>Название товара номер один</p>
-        <p>12&nbsp;384Р</p>
+        <span>12&nbsp;384Р</span>
       </div>
 
       <div class="catalog__item">
         <img src="/images/catalog/3.jpg" alt="">
         <p>Название товара номер один</p>
-        <p>12&nbsp;384Р</p>
+        <span>12&nbsp;384Р</span>
+      </div>
+
+      <div class="catalog__item">
+        <img src="/images/catalog/1.jpg" alt="">
+        <div class="sale__sign">25%</div>
+        <p>Название товара номер один</p>
+        <span class='old__price'>12&nbsp;384Р</span>
+        <span class='sale__price'>9&nbsp;185Р</span>
+      </div>
+
+      <div class="catalog__item">
+        <img src="/images/catalog/2.jpg" alt="">
+        <p>Название товара номер один</p>
+        <span>12&nbsp;384Р</span>
+      </div>
+
+      <div class="catalog__item">
+        <img src="/images/catalog/3.jpg" alt="">
+        <p>Название товара номер один</p>
+        <span>12&nbsp;384Р</span>
       </div>
 
       <div class="catalog__item">
         <img src="/images/catalog/1.jpg" alt="">
         <p>Название товара номер один</p>
-        <p>12&nbsp;384Р</p>
+        <span>12&nbsp;384Р</span>
       </div>
 
       <div class="catalog__item">
         <img src="/images/catalog/2.jpg" alt="">
         <p>Название товара номер один</p>
-        <p>12&nbsp;384Р</p>
+        <span>12&nbsp;384Р</span>
+      </div>
+
+      <div class="catalog__item">
+        <img src="/images/catalog/2.jpg" alt="">
+        <p>Название товара номер один</p>
+        <span>12&nbsp;384Р</span>
       </div>
 
       <div class="catalog__item">
         <img src="/images/catalog/3.jpg" alt="">
         <p>Название товара номер один</p>
-        <p>12&nbsp;384Р</p>
+        <span>12&nbsp;384Р</span>
       </div>
 
       <div class="catalog__item">
         <img src="/images/catalog/1.jpg" alt="">
         <p>Название товара номер один</p>
-        <p>12&nbsp;384Р</p>
+        <span>12&nbsp;384Р</span>
       </div>
 
       <div class="catalog__item">
         <img src="/images/catalog/2.jpg" alt="">
         <p>Название товара номер один</p>
-        <p>12&nbsp;384Р</p>
-      </div>
-
-      <div class="catalog__item">
-        <img src="/images/catalog/3.jpg" alt="">
-        <p>Название товара номер один</p>
-        <p>12&nbsp;384Р</p>
-      </div>
-
-      <div class="catalog__item">
-        <img src="/images/catalog/1.jpg" alt="">
-        <p>Название товара номер один</p>
-        <p>12&nbsp;384Р</p>
+        <span>12&nbsp;384Р</span>
       </div>
 
       <div class="catalog__item">
         <img src="/images/catalog/2.jpg" alt="">
         <p>Название товара номер один</p>
-        <p>12&nbsp;384Р</p>
+        <span>12&nbsp;384Р</span>
       </div>
-
-      <div class="catalog__item">
-        <img src="/images/catalog/3.jpg" alt="">
-        <p>Название товара номер один</p>
-        <p>12&nbsp;384Р</p>
-      </div>
-
-
+      
     </div>
   </div>
 </div>

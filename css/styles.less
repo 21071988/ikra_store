@@ -2,6 +2,7 @@
 @w:#ffffff;
 @bc1:#423b3b;
 @hc:#90D7D2;
+@red:#EA2C32;
 @m:20px;
 
 .hc{
@@ -179,6 +180,7 @@ footer{
 	grid-gap:40px;
 }
 .catalog__item{
+	position: relative;
 	img{
 		.w100;
 		margin-bottom: 10px;
@@ -186,6 +188,32 @@ footer{
 	p{
 		margin-bottom: 10px;
 	}
+}
+.sale__price{
+	color:@red;
+}
+.old__price{
+	font-size: 0.8em;
+	position: relative;
+	margin-right:15px;
+	&:after{
+		content: '';
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    width: 100%;
+    height: 1px;
+    background:@bl;
+	}
+}
+.sale__sign{
+		position: absolute;
+    top: 15%;
+    left: 0;
+    background: white;
+		z-index: 100;
+		padding: 0 3px;
+		color:@red;
 }
 .catalog__menu{
 	width: 250px;
