@@ -6,15 +6,15 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.ico"> 
   <link rel="shortcut icon" href="favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="stylesheet/less" type="text/css" href="css/styles.less">
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet/less" type="text/css" href="/css/styles.less">
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
 
 </head>
 <body>
 <header>
   <div class='logo__div'>
-      <a href="index.php">
-        <img src="images/svg/logo.svg" alt="">
+      <a href="/index.php">
+        <img src="/images/svg/logo.svg" alt="">
       </a>
   </div>
   <div class="header__menu">

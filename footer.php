@@ -9,7 +9,7 @@
 
     
     <a href="index.php">
-      <img class='logo__footer' src="images/svg/logo__white.svg" alt="">
+      <img class='logo__footer' src="/images/svg/logo__white.svg" alt="">
     </a>
     <a href="https://slim.technology/" class='slim'>дизайн и разработка slim.technology</a>
   </div>
@@ -56,6 +56,6 @@
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous">
 </script>
-<script src="js/main.js"></script>
+<script src="/js/main.js"></script>
 </body>
 </html>

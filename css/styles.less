@@ -39,7 +39,7 @@
 }
 .thefont{
 	font-family: 'Introcond';
-	font-size:20px;
+	font-size:18px;
 }
 .thefontbold{
 	font-family: 'IntrocondBold';
@@ -57,7 +57,9 @@ font-style: normal;
 	font-weight: normal;
 	font-style: normal;
 	}
-
+.leftW{
+	width: 250px;
+}
 body, p{
 	margin:0;
 	padding: 0;
@@ -80,14 +82,14 @@ header{
 	padding:20px 40px;
 }
 .logo__div{
-	width: 300px;
+	.leftW;
 	text-align: left;
 	img{
 		width: 150px;
 	}
 }
 .header__menu{
-	.w100;
+	flex-grow: 1;
 	ul{
 		padding-left:0;
 		.flex;
@@ -163,7 +165,45 @@ footer{
 		}
 	}
 }
-
+.catalog{
+	padding:0 40px;
+	.flex;
+}
+.catalog__part{
+	flex:1;
+	flex-grow: 1;
+}
+.catalog__pages{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-gap:40px;
+}
+.catalog__item{
+	img{
+		.w100;
+		margin-bottom: 10px;
+	}
+	p{
+		margin-bottom: 10px;
+	}
+}
+.catalog__menu{
+	width: 250px;
+	.leftW;
+}
+.menu__categories, .catalog__menu__brands{
+	.column;
+	a{
+		margin-bottom: 10px;
+	}
+}
+.catalog__menu__brands{
+	
+	margin-top:40px;
+	b{
+		margin-bottom:20px;
+	}
+}
 
 
 
