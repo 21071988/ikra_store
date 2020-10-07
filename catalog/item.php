@@ -34,13 +34,11 @@
           <form action="">
             
               <div class="size__choosing">
-                <label class='size__choosing__label' for="xs">xs</label>
-                <input type="radio" name='xs' value='xs'>xs
-                <label class='size__choosing__label' for="s"></label>
-                <input type="radio" name='s' value='xs'>s
-                <label class='size__choosing__label' for="m"></label>
-                <input type="radio" name='m' value='xs'>m
-              
+                <label class='size__choosing__label' for="xs"><input type="radio" name='size' value='xs'> xs</label>
+                
+                <label class='size__choosing__label' for="s"><input type="radio" name='size' value='s'> s</label>
+                
+                <label class='size__choosing__label' for="m"><input type="radio" name='size' value='m'> m</label>              
               </div>
 
             <div class="item__quantity">
