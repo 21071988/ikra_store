@@ -43,13 +43,13 @@
 
             <div class="item__quantity">
               <span>Кол-во:</span>
-              <span>-</span>
+              <span id='minus'>-</span>
               <span id='item__quantity'>1</span>
-              <span>+</span>
+              <span id='plus'>+</span>
             </div>
 
             <div class='button__bottom'>
-              <button>В корзину</button>
+              <button id='to__basket'>В корзину</button>
               <div class="bottom__line"></div>
             </div>  
           </form>

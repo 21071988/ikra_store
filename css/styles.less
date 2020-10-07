@@ -449,6 +449,7 @@ footer{
     grid-template-columns: repeat(5, 1fr);
     width: 70%;
 		grid-gap: 10px;
+
 		margin-bottom: @m;
 }
 
@@ -523,7 +524,7 @@ footer{
 	}
 }
 
-.ssize__choosing__label{
+.size__choosing__label{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -536,6 +537,23 @@ footer{
 }
 .btn-secondary.focus, .btn-secondary:focus{
 	box-shadow: none !important;
+}
+.basket__link{
+	position: relative;
+	div, svg{
+		position: absolute;
+	}
+	div{
+		display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 32px;
+    top: 0;
+    left: 0;
+    font-size: 15px;
+		
+	}
 }
 
 

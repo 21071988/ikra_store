@@ -86,6 +86,61 @@ let promoBtn = document.getElementById('insert__promocode');
 // конец отрисовки линии
 
 
+//выбор размера в карточке товара
+
+let label = document.querySelectorAll('.size__choosing__label');
+labelArray = Array.from(label);
+for(let i = 0; i< labelArray.length; i++){
+    labelArray[i].addEventListener('click',function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+    });
+}
+
+
+//изменение количества добавляемых в корзину товаров
+
+let minus = document.getElementById('minus');
+let plus = document.getElementById('plus');
+let item__quantity = document.getElementById('item__quantity');
+let bQuantity = document.getElementById('bQuantity');
+
+minus.addEventListener('click',minusOne);
+plus.addEventListener('click',plusOne);
+
+function minusOne(){
+    let iq = Number(item__quantity.innerText);
+    if(iq>1){
+        item__quantity.innerText = iq-1;
+    } 
+};
+function plusOne(){
+        let iq = Number(item__quantity.innerText);
+        item__quantity.innerText = iq+1;
+};
+
+
+//добавление товаров в корзину
+let toBasket = document.getElementById('to__basket');
+toBasket.addEventListener('click',addToBasket);
+
+function addToBasket(e){
+    console.log(bQuantity.innerText);
+    bQuantity.innerText = Number(bQuantity.innerText)+1;
+    
+
+
+    e.preventDefault();
+}
+
+
+
+
+
+
+
+
 
 
 
