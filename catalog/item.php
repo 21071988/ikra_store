@@ -34,7 +34,7 @@
           <form action="">
             
               <div class="size__choosing">
-                <label class='size__choosing__label' for="xs"><input type="radio" name='size' value='xs'> xs</label>
+                <label class='size__choosing__label active' for="xs"><input type="radio" name='size' value='xs' checked> xs</label>
                 
                 <label class='size__choosing__label' for="s"><input type="radio" name='size' value='s'> s</label>
                 
