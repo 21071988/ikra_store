@@ -75,7 +75,8 @@
 <div class='button__bottom'>
       <button>Продолжить</button>
       <div class="bottom__line"></div>
-    </div>
+</div>
+
 
 <?php require($_SERVER["DOCUMENT_ROOT"]."/footer.php");?>
 
