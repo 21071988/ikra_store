@@ -106,8 +106,13 @@ let plus = document.getElementById('plus');
 let item__quantity = document.getElementById('item__quantity');
 let bQuantity = document.getElementById('bQuantity');
 
-minus.addEventListener('click',minusOne);
-plus.addEventListener('click',plusOne);
+if(minus != null){
+  minus.addEventListener('click',minusOne);
+}
+if(plus != null){
+  plus.addEventListener('click',plusOne);
+}
+
 
 function minusOne(){
     let iq = Number(item__quantity.innerText);
@@ -123,7 +128,9 @@ function plusOne(){
 
 //добавление товаров в корзину
 let toBasket = document.getElementById('to__basket');
-toBasket.addEventListener('click',addToBasket);
+if(toBasket !=null){
+  toBasket.addEventListener('click',addToBasket);
+}
 
 function addToBasket(e){
     console.log(bQuantity.innerText);
@@ -134,6 +141,17 @@ function addToBasket(e){
     e.preventDefault();
 }
 
+
+//удаление непонравившихся товаров в корзине
+
+let itemDel = document.querySelectorAll('.delete__item');
+itemToDelete = Array.from(itemDel);
+for(let i = 0; i< itemToDelete.length; i++){
+  itemToDelete[i].addEventListener('click',function(){
+    itemToDelete[i].parentNode.remove();
+   
+    });
+}
 
 
 

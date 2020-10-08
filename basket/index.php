@@ -16,7 +16,7 @@
             <span class='old__price'>12&nbsp;384Р</span>
             <span class='sale__price'>9&nbsp;185Р</span>
             <br>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44"><defs><style>.minus{fill:none;stroke:#13100D;stroke-miterlimit:10;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><circle class="minus" cx="22" cy="22" r="21.5"/><line class="minus" x1="5.79" y1="22" x2="37.51" y2="22"/></g></g></svg>
+            <svg class='delete__item' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44"><defs><style>.minus{fill:none;stroke:#13100D;stroke-miterlimit:10;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><circle class="minus" cx="22" cy="22" r="21.5"/><line class="minus" x1="5.79" y1="22" x2="37.51" y2="22"/></g></g></svg>
         </div>
 
         <div class="catalog__item">
@@ -26,27 +26,27 @@
           <p>Название товара номер один</p>
           <span>9&nbsp;185Р</span>
           <br>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44"><defs><style>.minus{fill:none;stroke:#13100D;stroke-miterlimit:10;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><circle class="minus" cx="22" cy="22" r="21.5"/><line class="minus" x1="5.79" y1="22" x2="37.51" y2="22"/></g></g></svg>
+          <svg class='delete__item' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44"><defs><style>.minus{fill:none;stroke:#13100D;stroke-miterlimit:10;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><circle class="minus" cx="22" cy="22" r="21.5"/><line class="minus" x1="5.79" y1="22" x2="37.51" y2="22"/></g></g></svg>
         </div>
 
         <div class="catalog__item">
           <div class='img__wrap'>
-            <img src="/images/catalog/1.jpg" alt="">
+            <img src="/images/catalog/2.jpg" alt="">
           </div>
           <p>Название товара номер один</p>
           <span>9&nbsp;185Р</span>
           <br>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44"><defs><style>.minus{fill:none;stroke:#13100D;stroke-miterlimit:10;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><circle class="minus" cx="22" cy="22" r="21.5"/><line class="minus" x1="5.79" y1="22" x2="37.51" y2="22"/></g></g></svg>
+          <svg class='delete__item' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44"><defs><style>.minus{fill:none;stroke:#13100D;stroke-miterlimit:10;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><circle class="minus" cx="22" cy="22" r="21.5"/><line class="minus" x1="5.79" y1="22" x2="37.51" y2="22"/></g></g></svg>
         </div>
 
         <div class="catalog__item">
           <div class='img__wrap'>
-            <img src="/images/catalog/1.jpg" alt="">
+            <img src="/images/catalog/3.jpg" alt="">
           </div>
           <p>Название товара номер один</p>
           <span>9&nbsp;185Р</span>
           <br>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44"><defs><style>.minus{fill:none;stroke:#13100D;stroke-miterlimit:10;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><circle class="minus" cx="22" cy="22" r="21.5"/><line class="minus" x1="5.79" y1="22" x2="37.51" y2="22"/></g></g></svg>
+          <svg class='delete__item' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44"><defs><style>.minus{fill:none;stroke:#13100D;stroke-miterlimit:10;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><circle class="minus" cx="22" cy="22" r="21.5"/><line class="minus" x1="5.79" y1="22" x2="37.51" y2="22"/></g></g></svg>
         </div>
 
     </div>
