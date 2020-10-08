@@ -11,7 +11,16 @@
       дизайнеров реализоваться, показать тебя,
       стать кем-то большим.
     </p>
-
+    <div class="double-sliders">
+      <div class="double__slider">
+        <img src="/images/main/5.jpg" alt="">
+        <img src="/images/main/3.jpg" alt="">
+      </div>
+      <div class="double__slider">
+        <img src="/images/main/3.jpg" alt="">
+        <img src="/images/main/5.jpg" alt="">
+      </div>
+    </div>
     <div class='button__bottom go__shopping__main'>
       <div class="to__right">
         <button>Перейти в магазин</button>
