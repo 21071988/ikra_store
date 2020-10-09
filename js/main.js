@@ -72,7 +72,12 @@ $(document).ready(function(){
 
 });
 
-
+document.querySelectorAll('.js-price').forEach(node => {
+        node.textContent = new Intl.NumberFormat('ru-RU', {
+          currency: 'rub',
+          style: 'currency'
+        }).format(node.textContent)
+      })
 
 
 let promoValue = document.getElementById('promocodeValue');
@@ -172,25 +177,26 @@ function addToBasket(e){
 //удаление непонравившихся товаров в корзине
 
 let itemDel = document.querySelectorAll('.delete__item');
-let yourSum = document.getElementById('currentSum');
+
 
 
 itemToDelete = Array.from(itemDel);
 for(let i = 0; i< itemToDelete.length; i++){
-  if(yourSum != null){
-    let currentSum = Number(document.getElementById('currentSum').dataset.currentsum);
-    console.log(currentSum);
-  }
   itemToDelete[i].addEventListener('click',function(){
+    
+    let yourSum = document.getElementById('currentSum');
     let needToMinus = Number(itemToDelete[i].parentNode.childNodes[5].dataset.price);
     itemToDelete[i].parentNode.remove(); 
-    let currentSumNumber = Number(currentSum.dataset.currentsum);
-    console.log(currentSumNumber-1);
-    console.log(needToMinus);
-    let newSumm = currentSumNumber - needToMinus;
-    console.log(newSumm);
-    console.log(yourSum.innerText);
-    yourSum.innerText = newSumm + ' Р';
+    
+    let currentSum = Number(document.getElementById('currentSum').dataset.currentsum);
+    let currentSumValue = document.getElementById('currentSum');
+    // console.log(currentSum);
+    // console.log(needToMinus);
+    currentSum = currentSum - needToMinus;
+    // console.log(currentSum);
+    currentSumValue.setAttribute('data-currentsum', currentSum);
+    // console.log(currentSumValue.dataset.currentsum);
+    yourSum.innerText = currentSum + ' Р';
 
   });
 }
