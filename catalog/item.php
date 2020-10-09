@@ -10,15 +10,16 @@
 </div>
   <div class="item">
     <div class="item__imgs">
-        <img src="/images/catalog/1.jpg" alt="">
-        <img src="/images/catalog/2.jpg" alt="">
-        <img src="/images/catalog/3.jpg" alt="">
-        <img src="/images/catalog/1.jpg" alt="">
-        <img src="/images/catalog/2.jpg" alt="">
-        <img src="/images/catalog/3.jpg" alt="">
-        <img src="/images/catalog/1.jpg" alt="">
-        <img src="/images/catalog/2.jpg" alt="">
-        <img src="/images/catalog/3.jpg" alt="">
+    <a data-fancybox="gallery" href="/images/catalog/1.jpg"><img src="/images/catalog/1.jpg"></a>
+    <a data-fancybox="gallery" href="/images/catalog/2.jpg"><img src="/images/catalog/2.jpg"></a>
+    <a data-fancybox="gallery" href="/images/catalog/3.jpg"><img src="/images/catalog/3.jpg"></a>
+    <a data-fancybox="gallery" href="/images/catalog/1.jpg"><img src="/images/catalog/1.jpg"></a>
+    <a data-fancybox="gallery" href="/images/catalog/2.jpg"><img src="/images/catalog/2.jpg"></a>
+    <a data-fancybox="gallery" href="/images/catalog/3.jpg"><img src="/images/catalog/3.jpg"></a>
+    <a data-fancybox="gallery" href="/images/catalog/1.jpg"><img src="/images/catalog/1.jpg"></a>
+    <a data-fancybox="gallery" href="/images/catalog/2.jpg"><img src="/images/catalog/2.jpg"></a>
+    <a data-fancybox="gallery" href="/images/catalog/3.jpg"><img src="/images/catalog/3.jpg"></a>
+        
     </div>
     <div class="item__props">
         <p class="item__name">

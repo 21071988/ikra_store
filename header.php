@@ -9,7 +9,7 @@
   <link rel="stylesheet/less" type="text/css" href="/css/styles.less">
   <link rel="stylesheet" type="text/css" href="/css/styles.css">
   <link rel="stylesheet" href="/css/slick.css">
-	<link rel="stylesheet" href="/css/slick-theme.css">
+	<link rel="stylesheet" href="/css/slick-theme.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 
 </head>
 <body>
