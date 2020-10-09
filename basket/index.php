@@ -72,7 +72,7 @@
   
 </div>
 
-<div class='button__bottom'>
+<div class='button__bottom button__bottom__basket'>
       <button>Продолжить</button>
       <div class="bottom__line"></div>
 </div>
