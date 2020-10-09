@@ -127,6 +127,7 @@ for(let i = 0; i< labelArray.length; i++){
 let minus = document.getElementById('minus');
 let plus = document.getElementById('plus');
 let item__quantity = document.getElementById('item__quantity');
+let item__quantity__input = document.getElementById('item__quantity__input');
 let bQuantity = document.getElementById('bQuantity');
 
 if(minus != null){
@@ -140,12 +141,15 @@ if(plus != null){
 function minusOne(){
     let iq = Number(item__quantity.innerText);
     if(iq>1){
-        item__quantity.innerText = iq-1;
+      item__quantity.innerText = iq-1;  
+      item__quantity__input.value = item__quantity.innerText;
     } 
 };
 function plusOne(){
         let iq = Number(item__quantity.innerText);
         item__quantity.innerText = iq+1;
+        item__quantity__input.value = item__quantity.innerText;
+        // console.log(item__quantity__input.value);
 };
 
 
@@ -156,7 +160,7 @@ if(toBasket !=null){
 }
 
 function addToBasket(e){
-    console.log(bQuantity.innerText);
+    // console.log(bQuantity.innerText);
     bQuantity.innerText = Number(bQuantity.innerText)+1;
     
 

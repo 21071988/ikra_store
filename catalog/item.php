@@ -32,7 +32,7 @@
 
         <a href="" class='choose__size__link'>Выбрать размер:</a>
         <div class="item__sizes">
-          <form action="">
+          <form action="index.php" method='GET'>
             
               <div class="size__choosing">
                 <label class='size__choosing__label active' for="xs"><input type="radio" id="xs" name='size' value='xs' checked> xs</label>
@@ -46,11 +46,12 @@
               <span>Кол-во:</span>
               <span id='minus'>-</span>
               <span id='item__quantity'>1</span>
+              <input id='item__quantity__input' name='itemQuantity' value='1' hidden></hidden>
               <span id='plus'>+</span>
             </div>
 
             <div class='button__bottom'>
-              <button id='to__basket'>В корзину</button>
+              <button id='to__basket' type='submit'>В корзину</button>
               <div class="bottom__line"></div>
             </div>  
           </form>
