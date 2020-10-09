@@ -51,7 +51,7 @@
 
     </div>
     <div class="basket__total">
-      <span data-currentsum= '18198' id='currentSum'>Итого:&nbsp;</span><span>18&nbsp;198Р</span> 
+      <span>Итого:&nbsp;</span><span data-currentsum= '18198' id='currentSum'>18&nbsp;198Р</span> 
     </div> 
 
     <div class="promocode">

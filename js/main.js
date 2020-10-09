@@ -173,18 +173,25 @@ function addToBasket(e){
 
 let itemDel = document.querySelectorAll('.delete__item');
 let yourSum = document.getElementById('currentSum');
-if(yourSum != null){
-  let currentSum = Number(document.getElementById('currentSum').dataset.currentsum);
-}
+
 
 itemToDelete = Array.from(itemDel);
 for(let i = 0; i< itemToDelete.length; i++){
+  if(yourSum != null){
+    let currentSum = Number(document.getElementById('currentSum').dataset.currentsum);
+    console.log(currentSum);
+  }
   itemToDelete[i].addEventListener('click',function(){
     let needToMinus = Number(itemToDelete[i].parentNode.childNodes[5].dataset.price);
     itemToDelete[i].parentNode.remove(); 
-    console.log(currentSum);
-    console.log(currentSum);
-    yourSum.innerText = currentSum - needToMinus;
+    let currentSumNumber = Number(currentSum.dataset.currentsum);
+    console.log(currentSumNumber-1);
+    console.log(needToMinus);
+    let newSumm = currentSumNumber - needToMinus;
+    console.log(newSumm);
+    console.log(yourSum.innerText);
+    yourSum.innerText = newSumm + ' Р';
+
   });
 }
 
