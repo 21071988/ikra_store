@@ -7,6 +7,7 @@
 @m2:40px;
 @m3:80px;
 @m4:160px;
+@m250:250px;
 
 
 .f2{
@@ -197,9 +198,13 @@ footer{
 }
 .wrapper{
 	padding:0 40px;
+	h1{
+
+	}
 }
 .wrapper__catalog{
 	.flex;
+	padding:0 40px;
 }
 .catalog__part{
 	flex:1;
@@ -272,7 +277,7 @@ footer{
 		color:@red;
 }
 .left__part{
-	width: 250px;
+	width: @m250;
 	.leftW;
 }
 .menu__categories, .catalog__menu__brands{
@@ -387,7 +392,7 @@ footer{
 	.flex;
 	margin-bottom:@m3;
 	.about__preview__text{
-		justify-content: space-between !important;
+		justify-content: space-between;
 		align-items:flex-start !important;
 		.column;
 		flex:1;
@@ -651,11 +656,78 @@ footer{
 		cursor: pointer;
 	}
 }
-.button__bottom__basket{
-	margin-left: @m2;
+.wrapper__about{
+	h1{
+		margin-left:@m250;
+		text-align: left;
+	}
+}
+.about__preview__text__about{
+	justify-content: center !important;
+}
+.about__three__images{
+	.flex;
+	margin-bottom:@m3;
+	div{
+		flex:1;
+		margin-right: @m2;
+		&:last-child{
+			margin-right: 0;
+		}
+		img{
+			.w100;
+			
+		}
+	}
+}
+.about__text__2{
+	position: relative;
+	padding-left: 40%;
+	margin-bottom:@m4;
+	margin-top: @m3;
+	p{
+		text-align: right;
+		.f15;
+	}
+}
+.ikra__left{
+	position: absolute;
+	top:-110%;
+	left:0;
+	width: 10%;
+}
+.big__break{
+	margin-bottom:@m3;
 }
 
-
+.about__text__two{
+	width: 60%;
+	margin:0 auto;
+	text-align: left;
+	margin-bottom:@m4;
+	p{
+		.f15;
+	}
+}
+.about__last__img{
+	position: relative;
+	padding:0 20%;
+	img{
+		width: 100%;
+		margin:0 auto;
+		margin-bottom: @m3;
+	}
+	p{
+		margin-bottom:@m250;
+		.f15;
+	}
+}
+.bigger__sign{
+	position: absolute;
+	top:20%;
+	right: 0;
+	width: 50px;
+}
 
 
 

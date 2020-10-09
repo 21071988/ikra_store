@@ -27,17 +27,17 @@
         </a>
       </li>
       <li>
-        <a href="delivery/">
+        <a href="/delivery/">
           оплата и доставка
         </a>
       </li>
       <li>
-        <a href="brands">
+        <a href="/brands">
           бренды
         </a>
       </li>
       <li>
-        <a href="about/">
+        <a href="/about/">
           о нас	
         </a>
       </li>

@@ -1,5 +1,5 @@
 <?php require($_SERVER["DOCUMENT_ROOT"]."/header.php");?>
-<div class="wrapper">
+<div class="wrapper__catalog">
   <div class="left__part">
 
   </div>
@@ -66,16 +66,16 @@
         </button>
       </form>
     </div>
-
+    <div class='button__bottom'>
+      <button>Продолжить</button>
+      <div class="bottom__line"></div>
+    </div>
     
   </div>
   
 </div>
 
-<div class='button__bottom button__bottom__basket'>
-      <button>Продолжить</button>
-      <div class="bottom__line"></div>
-</div>
+
 
 
 <?php require($_SERVER["DOCUMENT_ROOT"]."/footer.php");?>
