@@ -11,15 +11,30 @@
       дизайнеров реализоваться, показать тебя,
       стать кем-то большим.
     </p>
-    <div class="double-sliders">
-      <div class="double__slider">
+    <div class="double__sliders">
+
+    <svg class='arml' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.65 64.65"><defs><style>.cls-arm{fill:#fff;opacity:0.46;}.cls-arm2{fill:none;stroke:#13100d;stroke-miterlimit:10;stroke-width:3px;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><circle class="cls-arm" cx="32.32" cy="32.32" r="32.32"/><polyline class="cls-arm2" points="26.2 15.35 44.94 30.67 26.2 45.03"/></g></g></svg>
+
+      <div class="double__slider">  
+
         <img src="/images/main/5.jpg" alt="">
         <img src="/images/main/3.jpg" alt="">
+
       </div>
+
+      <svg class='armr' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.65 64.65"><defs><style>.cls-arm{fill:#fff;opacity:0.46;}.cls-arm2{fill:none;stroke:#13100d;stroke-miterlimit:10;stroke-width:3px;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><circle class="cls-arm" cx="32.32" cy="32.32" r="32.32"/><polyline class="cls-arm2" points="26.2 15.35 44.94 30.67 26.2 45.03"/></g></g></svg>
+
+      <svg class='arml arml2' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.65 64.65"><defs><style>.cls-arm{fill:#fff;opacity:0.46;}.cls-arm2{fill:none;stroke:#13100d;stroke-miterlimit:10;stroke-width:3px;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><circle class="cls-arm" cx="32.32" cy="32.32" r="32.32"/><polyline class="cls-arm2" points="26.2 15.35 44.94 30.67 26.2 45.03"/></g></g></svg>
+      
       <div class="double__slider">
+        
         <img src="/images/main/3.jpg" alt="">
         <img src="/images/main/5.jpg" alt="">
+
       </div>
+
+      <svg class='armr armr2' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64.65 64.65"><defs><style>.cls-arm{fill:#fff;opacity:0.46;}.cls-arm2{fill:none;stroke:#13100d;stroke-miterlimit:10;stroke-width:3px;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><circle class="cls-arm" cx="32.32" cy="32.32" r="32.32"/><polyline class="cls-arm2" points="26.2 15.35 44.94 30.67 26.2 45.03"/></g></g></svg>
+
     </div>
     <div class='button__bottom go__shopping__main'>
       <div class="to__right">

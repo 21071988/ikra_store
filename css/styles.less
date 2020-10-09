@@ -6,6 +6,7 @@
 @m:20px;
 @m2:40px;
 @m3:80px;
+@m4:160px;
 
 
 .f2{
@@ -26,6 +27,10 @@
 }
 .w100{
 	width: 100%;
+}
+.w80{
+	width: 80%;
+	margin: 0 auto;
 }
 .positionA{
 	position:absolute;
@@ -192,7 +197,6 @@ footer{
 }
 .wrapper{
 	padding:0 40px;
-	.flex;
 }
 .catalog__part{
 	flex:1;
@@ -358,19 +362,18 @@ footer{
 	width: 68%;
 	margin-left: 30%;
 	margin-top: 40px;
-	margin-bottom:@m3;
+	margin-bottom:@m4;
 }
 
 .first__main__p__text{
 	width: 60%;
-	margin-bottom:@m3;
+	margin-bottom:@m4;
 	font-size: 1.8rem;
 	margin-left:@m;
 }
 
 .go__shopping__main{
-	margin-bottom:@m3;
-	margin-right: @m2;
+	margin:@m4;
 	.flex;
 	justify-content: flex-end;
 	button{
@@ -388,6 +391,7 @@ footer{
 		p{
 			width: 70%;
 			margin:0 auto;
+			.f15;
 		}
 		img{
 			.w100;
@@ -563,7 +567,82 @@ footer{
 	.w100;
 }
 
+.orders__history__full h2{
+	margin:80px 0 10px 10px;
+}
+.u__liked__full{
+	h2{
+		margin-left:10px;
+		margin-right: 10px;
+		margin-bottom: 0;
+	}
+}
+.liked{
+	align-items: flex-end;
+	.flex;
+	svg{
+		width: 30px;
+		margin-bottom: 6px;
+	}
+}
 
+.lk__prop{
+	font-size: 15px;
+	margin-bottom:10px;
+}
+
+.lk__prop__value{
+	.f15;
+	margin-bottom:@m2;
+}
+.personal__data{
+	.flex;
+	width: 60%;
+	margin-left: 25%;
+	margin-bottom: @m3;
+	div{
+		flex:1;
+	}
+}
+.offers{
+	width: 50%;
+	margin-bottom: 150px;
+	margin-left: 10%;
+}
+.lk h1{
+	text-align: left;
+  margin-left: 25%;
+}
+
+.double__sliders{
+	.w100;
+	.flex;
+	position: relative;
+	svg{
+		position: absolute;
+		width: 30px;
+	}
+}
+.double__slider{
+	width: 50%;
+}
+.armr, .arml{
+	top:50%;
+	z-index:100;
+}
+.arml{
+	left:52%;
+	transform: rotateZ(180deg);
+}
+.armr{
+	right:52%;
+}
+.arml2{
+	left:2%;
+}
+.armr2{
+	right:2%;
+}
 
 
 

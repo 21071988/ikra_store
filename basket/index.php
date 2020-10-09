@@ -14,7 +14,7 @@
             </div>
             <p>Название товара номер один</p>
             <span class='old__price'>12&nbsp;384Р</span>
-            <span class='sale__price'>9&nbsp;185Р</span>
+            <span data-price='9185' class='sale__price'>9&nbsp;185Р</span>
             <br>
             <svg class='delete__item' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44"><defs><style>.minus{fill:none;stroke:#13100D;stroke-miterlimit:10;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><circle class="minus" cx="22" cy="22" r="21.5"/><line class="minus" x1="5.79" y1="22" x2="37.51" y2="22"/></g></g></svg>
         </div>
@@ -24,7 +24,7 @@
             <img src="/images/catalog/1.jpg" alt="">
           </div>
           <p>Название товара номер один</p>
-          <span>9&nbsp;185Р</span>
+          <span data-price='9125'>9&nbsp;185Р</span>
           <br>
           <svg class='delete__item' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44"><defs><style>.minus{fill:none;stroke:#13100D;stroke-miterlimit:10;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><circle class="minus" cx="22" cy="22" r="21.5"/><line class="minus" x1="5.79" y1="22" x2="37.51" y2="22"/></g></g></svg>
         </div>
@@ -34,7 +34,7 @@
             <img src="/images/catalog/2.jpg" alt="">
           </div>
           <p>Название товара номер один</p>
-          <span>9&nbsp;185Р</span>
+          <span data-price='9135'>9&nbsp;185Р</span>
           <br>
           <svg class='delete__item' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44"><defs><style>.minus{fill:none;stroke:#13100D;stroke-miterlimit:10;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><circle class="minus" cx="22" cy="22" r="21.5"/><line class="minus" x1="5.79" y1="22" x2="37.51" y2="22"/></g></g></svg>
         </div>
@@ -44,14 +44,14 @@
             <img src="/images/catalog/3.jpg" alt="">
           </div>
           <p>Название товара номер один</p>
-          <span>9&nbsp;185Р</span>
+          <span data-price='9131'>9&nbsp;185Р</span>
           <br>
           <svg class='delete__item' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44"><defs><style>.minus{fill:none;stroke:#13100D;stroke-miterlimit:10;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><circle class="minus" cx="22" cy="22" r="21.5"/><line class="minus" x1="5.79" y1="22" x2="37.51" y2="22"/></g></g></svg>
         </div>
 
     </div>
     <div class="basket__total">
-      <span>Итого:&nbsp;</span><span>18&nbsp;198Р</span> 
+      <span data-currentsum= '18198' id='currentSum'>Итого:&nbsp;</span><span>18&nbsp;198Р</span> 
     </div> 
 
     <div class="promocode">

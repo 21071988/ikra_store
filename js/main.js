@@ -45,6 +45,29 @@ $(document).ready(function(){
         $('.earlier__slider').slick('slickPrev');
       });
 
+      //маленький двойной слайдер на главной
+      $('.double__slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows:false
+    });
+    
+    $('.arml').on('click', function() {
+      $('.double__slider').slick('slickNext');
+    });
+    $('.armr').on('click', function() {
+      $('.double__slider').slick('slickPrev');
+    });
+
+
+
+  $('.mpre').on('click', function() {
+    $('.earlier__slider').slick('slickNext');
+  });
+  $('.mple').on('click', function() {
+    $('.earlier__slider').slick('slickPrev');
+  });
 
 
 });
@@ -145,13 +168,23 @@ function addToBasket(e){
 //удаление непонравившихся товаров в корзине
 
 let itemDel = document.querySelectorAll('.delete__item');
+let yourSum = document.getElementById('currentSum');
+if(yourSum != null){
+  let currentSum = Number(document.getElementById('currentSum').dataset.currentsum);
+}
+
 itemToDelete = Array.from(itemDel);
 for(let i = 0; i< itemToDelete.length; i++){
   itemToDelete[i].addEventListener('click',function(){
-    itemToDelete[i].parentNode.remove();
-   
-    });
+    let needToMinus = Number(itemToDelete[i].parentNode.childNodes[5].dataset.price);
+    itemToDelete[i].parentNode.remove(); 
+    console.log(currentSum);
+    console.log(currentSum);
+    yourSum.innerText = currentSum - needToMinus;
+  });
 }
+
+
 
 
 
