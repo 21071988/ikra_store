@@ -775,6 +775,54 @@ footer{
 	margin-bottom: @m;
 }
 
+.locations{
+	min-height: 80vh;
+	.flex;
+	padding:0 40px;
+}
+.maps{
+	flex-grow:1;
+}
+
+.cities{
+	.column;
+	a{
+		margin-bottom: 20px;
+	}
+}
+.maps{
+	position: relative;
+}
+.map{
+		position: absolute;
+		top:0;
+		left:0;
+		opacity: 0;
+		z-index:10;
+		.trans4;
+		.flex;
+		&:first-child{
+			opacity: 1;
+			position: relative;
+		}
+}
+.map__data{
+	.column;
+	width: 250px;
+	p{
+		margin-bottom: @m;
+	}
+}
+.map__itself{
+	flex-grow: 1;
+	iframe{
+		border:none;
+	}
+}
+
+
+
+
 @media screen and(max-width: 768px) {
 	
 }

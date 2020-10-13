@@ -220,11 +220,31 @@ for(let i = 0; i< tabsArray.length; i++){
           textsArray[j].style.opacity = '0';
         }
       }
-      
-      
-      console.log(this.className);
   });
 }
+
+// locations block
+let cityN = document.querySelectorAll('.cities a');
+let cityA = document.querySelectorAll('.map');
+
+cityName = Array.from(cityN);
+city = Array.from(cityA);
+for(let i = 0; i< cityName.length; i++){
+  cityName[i].addEventListener('click',function(){
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+     
+      for(let j = 0; j< city.length; j++){
+        if (j == i){
+          city[j].style.opacity = '1';
+        }else{
+          city[j].style.opacity = '0';
+        }
+      }
+  });
+}
+
 
 
 
