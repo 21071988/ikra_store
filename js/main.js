@@ -201,7 +201,21 @@ for(let i = 0; i< itemToDelete.length; i++){
   });
 }
 
+//info block
+let tabs = document.querySelectorAll('.nav-link');
+tabsArray = Array.from(tabs);
+console.log(tabsArray);
+for(let i = 0; i< labelArray.length; i++){
+  tabsArray[i].addEventListener('click',function(){
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+      console.log(tabsArray[i]);
+  });
+}
 
+let current = document.getElementById("active");
+current.addEventListener('click',console.log('it does'));
 
 
 

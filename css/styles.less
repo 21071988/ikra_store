@@ -99,13 +99,13 @@ h1{
 }
 a{
 	text-decoration: none;
-	color:@bl;
+	color:@bl !important;
 }
 b{
 	font-family: 'IntrocondBold';
 }
 header{
-	.flex;
+	.flex !important;
 	justify-content: space-between;
 	align-items: center;
 	padding:20px 40px;
@@ -149,7 +149,7 @@ footer{
 	height: 50vh;
 	background:@bl;
 	padding:40px;
-	.flex;
+	.flex !important;
 	margin-top:100px;
 	a{
 		.white;
@@ -729,6 +729,32 @@ footer{
 	width: 50px;
 }
 
+// .nav-tabs{
+// 	border-bottom: none !important;
+// 	&:actve{
+// 		border-bottom: none !important;
+// 	}
+// }
+// .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+// 	border:none !important;
+// 	border-bottom: 1px solid @bl !important;
+// 	margin:0 !important;
+// }
+
+.info__text{
+	position: relative;
+	p{
+		position: absolute;
+		top:0;
+		left:0;
+		opacity: 0;
+		z-index:10;
+		.trans4;
+	}
+}
+.shown__text{
+	opacity: 1;
+}
 
 
 @media screen and(max-width: 768px) {
