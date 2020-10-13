@@ -203,19 +203,29 @@ for(let i = 0; i< itemToDelete.length; i++){
 
 //info block
 let tabs = document.querySelectorAll('.nav-link');
+let texts = document.querySelectorAll('.info__text p');
+
 tabsArray = Array.from(tabs);
-console.log(tabsArray);
-for(let i = 0; i< labelArray.length; i++){
+textsArray = Array.from(texts);
+for(let i = 0; i< tabsArray.length; i++){
   tabsArray[i].addEventListener('click',function(){
       var current = document.getElementsByClassName("active");
       current[0].className = current[0].className.replace(" active", "");
       this.className += " active";
-      console.log(tabsArray[i]);
+     
+      for(let j = 0; j< textsArray.length; j++){
+        if (j == i){
+          textsArray[j].style.opacity = '1';
+        }else{
+          textsArray[j].style.opacity = '0';
+        }
+      }
+      
+      
+      console.log(this.className);
   });
 }
 
-let current = document.getElementById("active");
-current.addEventListener('click',console.log('it does'));
 
 
 

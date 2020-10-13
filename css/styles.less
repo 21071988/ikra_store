@@ -99,7 +99,12 @@ h1{
 }
 a{
 	text-decoration: none;
-	color:@bl !important;
+	color:@bl;
+	.trans4;
+	&:hover{
+		cursor: pointer;
+		// color:@hc;
+	}
 }
 b{
 	font-family: 'IntrocondBold';
@@ -750,12 +755,25 @@ footer{
 		opacity: 0;
 		z-index:10;
 		.trans4;
+		&:first-child{
+			opacity: 1;
+			position: relative;
+		}
 	}
 }
 .shown__text{
 	opacity: 1;
 }
-
+.info{
+	width: 70%;
+	margin:0 auto;
+	min-height: 70vh;
+}
+.info__header{
+	.flex;
+	justify-content: space-around;
+	margin-bottom: @m;
+}
 
 @media screen and(max-width: 768px) {
 	
