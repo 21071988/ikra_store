@@ -282,20 +282,18 @@ window.onload = function(){
           brandBottomSign[i].classList.add('shown__text');
           let img1 = brandsWrapper.firstElementChild.src;
           let img2 = activeSlide[i].dataset.img;
-          console.log(img1);
-          console.log(img2);
-          console.log(img1.indexOf(img2));
+
           if(img1.indexOf(activeSlide[i].dataset.img) == -1){
               brandsWrapper.firstElementChild.classList.add('hide__text');
               setTimeout(function(){
                 brandsWrapper.innerHTML = `<img src='${activeSlide[i].dataset.img}' class='show__nice__text'></img>`;
-              },700);
+              },500);
           }
         });
-         activeSlide[i].addEventListener('mouseleave',function(){
-          brandTopSign[i].classList.remove('shown__text');
-          brandBottomSign[i].classList.remove('shown__text');
-         });
+          activeSlide[i].addEventListener('mouseleave',function(){
+            brandTopSign[i].classList.remove('shown__text');
+            brandBottomSign[i].classList.remove('shown__text');
+          });
          
     }
     for(let j = 0; j<= brandArrow.length; j++){
