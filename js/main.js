@@ -69,6 +69,22 @@ $(document).ready(function(){
     $('.earlier__slider').slick('slickPrev');
   });
 
+//  brands slider
+ $('.brands__slider').slick({
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            rows:2,
+            arrows:false
+        });
+
+      
+      $('.bar').on('click', function() {
+        $('.brands__slider').slick('slickNext');
+      });
+      $('.bal').on('click', function() {
+        $('.brands__slider').slick('slickPrev');
+      }); 
 
 });
 
@@ -244,6 +260,56 @@ for(let i = 0; i< cityName.length; i++){
       }
   });
 }
+
+window.onload = function(){
+  let actveSlideAr = document.querySelectorAll('.brands__slider .brand__name');
+  let activeSlide = Array.from(actveSlideAr);
+
+  let brandTopSignAr = document.querySelectorAll('.brands__slider .brand__top__sign');
+  let brandTopSign = Array.from(brandTopSignAr);
+
+  let brandBottomSignAr = document.querySelectorAll('.brands__slider .brand__description');
+  let brandBottomSign = Array.from(brandBottomSignAr);
+
+  const brandsWrapper = document.getElementById('brands__back');
+
+  let brandArrowAr = document.getElementsByClassName('brand__arrow');
+  let brandArrow = Array.from(brandArrowAr);
+
+    for(let i = 0; i< activeSlide.length; i++){
+        activeSlide[i].addEventListener('mouseover',function(){
+          brandTopSign[i].classList.add('shown__text');
+          brandBottomSign[i].classList.add('shown__text');
+          let img1 = brandsWrapper.firstElementChild.src;
+          let img2 = activeSlide[i].dataset.img;
+          console.log(img1);
+          console.log(img2);
+          console.log(img1.indexOf(img2));
+          if(img1.indexOf(activeSlide[i].dataset.img) == -1){
+              brandsWrapper.firstElementChild.classList.add('hide__text');
+              setTimeout(function(){
+                brandsWrapper.innerHTML = `<img src='${activeSlide[i].dataset.img}' class='show__nice__text'></img>`;
+              },700);
+          }
+        });
+         activeSlide[i].addEventListener('mouseleave',function(){
+          brandTopSign[i].classList.remove('shown__text');
+          brandBottomSign[i].classList.remove('shown__text');
+         });
+         
+    }
+    for(let j = 0; j<= brandArrow.length; j++){
+      brandArrow[j].addEventListener('click',function(){
+        var current = document.getElementsByClassName('slick-active');
+        var currentImage = current[0].childNodes[1].childNodes[0].childNodes[3].dataset.img;
+        brandsWrapper.innerHTML = `<img src='${currentImage}' class='show__nice__text'></img>`;
+      })
+      
+    }
+}
+
+
+
 
 
 

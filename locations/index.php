@@ -1,5 +1,7 @@
 <?php require($_SERVER["DOCUMENT_ROOT"]."/header.php");?>
+<h1 class="locations__h1">Где нас найти</h1>
 <div class="locations">
+
     <div class="cities left__part">
       <a class='active' href="#">Владивосток</a>
       <a href="#">Хабаровск</a>
