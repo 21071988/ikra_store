@@ -17,7 +17,7 @@
     <a href="#">Оплата</a>
     <a href="#"> доставка</a>
     <a href="#">возврат</a>
-    <a href="#">возврат</a>
+    <a href="#">Оферта</a>
   </div>
   <div class="footer__div footer__div__three">
    <div>

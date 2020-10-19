@@ -38,7 +38,7 @@
     </div>
     <div class='button__bottom go__shopping__main'>
       <div class="to__right">
-        <button>Перейти в магазин</button>
+        <div class='some'><a href='/catalog'>Перейти в магазин</a></div>
         <div class="bottom__line"></div>
       </div>
     </div>
@@ -53,7 +53,7 @@
           в том числе из Владивостока.... 
           </p>
           <div class='button__bottom show__more__main'>
-            <button>узнать больше о ikra</button>
+          <div class='some'><a href='/about'>узнать больше о ikra</a></div>
             <div class="bottom__line"></div>
           </div>
       </div>

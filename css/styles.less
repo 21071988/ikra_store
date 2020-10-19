@@ -106,14 +106,25 @@ h1{
 a{
 	text-decoration: none;
 	color:@bl;
+	width: fit-content;
 	.trans4;
 	&:hover{
 		cursor: pointer;
 		// color:@hc;
 	}
 }
+
+.some{
+	&:hover{
+		cursor:pointer;
+	}
+	button{
+		width: fit-content;
+	}
+}
 .active{
 	position: relative;
+	.trans4;
 	&:after{
 		content: '';
     position: absolute;
@@ -121,7 +132,8 @@ a{
     bottom: 0%;
     width: 90%;
     height: 1.5px;
-    background:@bl;
+		background:@bl;
+		.trans4;
 	}
 }
 b{
@@ -272,6 +284,7 @@ footer{
 	font-size: 0.8em;
 	position: relative;
 	margin-right:15px;
+	width: fit-content;
 	&:after{
 		content: '';
     position: absolute;
@@ -320,7 +333,9 @@ footer{
 	margin-top:@m2;
 	.f2;
 }
-
+.promo__div{
+	.column;
+}
 .promocode{
 	margin-top:@m2;
 	width: 70%;
@@ -329,8 +344,9 @@ footer{
 		.flex;
 		width: 100%;
 		input{
-			.w100;
 			height: 30px;
+			border:1px solid @bl !important;
+			margin-bottom: 10px;
 		}
 		label{
 			font-size: 0.6em;
@@ -346,6 +362,7 @@ footer{
 
 }
 .button__bottom{
+	width: fit-content;
 	margin-top:@m2;
 	// margin-left:290px;
 	.bottom__line{
@@ -353,6 +370,9 @@ footer{
 		margin: 0;
 		height: 2px;
 		background:@bl;
+	}
+	a{
+		width:100px;
 	}
 }
 #insert__promocode{
@@ -366,6 +386,9 @@ footer{
 
 .show__more__main{
 	margin-left: 15%;
+	.some{
+		font-size: 2rem;
+	}
 }
 .the__very__first__img{
 	.w100;
@@ -407,7 +430,7 @@ footer{
 	margin:@m4;
 	.flex;
 	justify-content: flex-end;
-	button{
+	.some{
 		font-size: 3rem;
 	}
 }
@@ -498,6 +521,10 @@ footer{
 	form{
 		.button__bottom{
 			margin-bottom:@m2;
+		}
+		.some{
+			width: fit-content;
+			font-size: 2rem;
 		}
 	}
 }
@@ -806,6 +833,9 @@ footer{
 	.column;
 	a{
 		margin-bottom: 20px;
+		&:after{
+			left:0 !important;
+		}
 	}
 }
 .maps{
@@ -930,9 +960,9 @@ footer{
 .order__wrapper{
 	margin:0 auto;
 }
-.order__button{
-	margin-top:@m2;
-			margin-left:38%;
+.button__bottom__order{
+	margin:@m3 auto;
+
 }
 .oc{
 	width: 30%;
@@ -1020,12 +1050,16 @@ label{
 	.old__price:after{
 		left:0;
 		width: 20%;
+
 	}
 }
 
 .delivery__type__menu{
 	.flex;
 	justify-content: space-around;
+	a{
+		.trans4;
+	}
 }
 .delivery__data{
 	position: relative;

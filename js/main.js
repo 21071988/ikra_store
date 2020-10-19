@@ -118,38 +118,28 @@ document.querySelectorAll('.js-price').forEach(node => {
       })
 
 
+// Появление кнопки "ввести промокод"
+
 let promoValue = document.getElementById('promocodeValue');
 let promoBtn = document.getElementById('insert__promocode');
 
-// promoValue.addEventListener('keydown', showBtn);
-// function showBtn(){
-//     if(promoValue.value.length>=5){
-//         promoBtn.style.opacity = '1';
-//     }else{
-//         promoBtn.style.opacity = '0';
-//     }
-// }
+if(promoValue !=null){
+  promoValue.addEventListener('keydown', showBtn);
+function showBtn(){
+    if(promoValue.value.length>=5){
+        promoBtn.style.opacity = '1';
+    }else{
+        promoBtn.style.opacity = '0';
+    }
+}
+}
+
 
 // отрисовка линии у любой кнопки внизу страницы
-// window.onload = function(){
 
-//     const btnBottom = document.querySelectorAll('.button__bottom button');
-//     const line = document.querySelector('.button__bottom div');
-//     console.log(btnBottom.clientWidth);
-//     let lineWidth = btnBottom.clientWidth;
-//     console.log(lineWidth * 0.7 +'px');
-//     line.style.width = lineWidth * 0.7 +'px';
+    
 
-//     btnBottom.addEventListener('mouseover', fullLine);
-//     btnBottom.addEventListener('mouseleave', notFullLine);
-//     function fullLine(){
-//         line.style.width = lineWidth+'px';
-//     }
-//     function notFullLine(){
-//         line.style.width = lineWidth * 0.7 +'px';
-//     }    
-// }
-// конец отрисовки линии
+
 
 
 //выбор размера в карточке товара
@@ -203,22 +193,17 @@ if(toBasket !=null){
 }
 
 function addToBasket(e){
-    // console.log(bQuantity.innerText);
     bQuantity.innerText = Number(bQuantity.innerText)+1;
-    
-
-
     e.preventDefault();
 }
+
 
 
 //удаление непонравившихся товаров в корзине
 
 let itemDel = document.querySelectorAll('.delete__item');
-
-
-
 itemToDelete = Array.from(itemDel);
+
 for(let i = 0; i< itemToDelete.length; i++){
   itemToDelete[i].addEventListener('click',function(){
     
@@ -228,16 +213,15 @@ for(let i = 0; i< itemToDelete.length; i++){
     
     let currentSum = Number(document.getElementById('currentSum').dataset.currentsum);
     let currentSumValue = document.getElementById('currentSum');
-    // console.log(currentSum);
-    // console.log(needToMinus);
+
     currentSum = currentSum - needToMinus;
-    // console.log(currentSum);
     currentSumValue.setAttribute('data-currentsum', currentSum);
-    // console.log(currentSumValue.dataset.currentsum);
     yourSum.innerText = currentSum + ' Р';
 
   });
 }
+
+
 
 //info block
 let tabs = document.querySelectorAll('.nav-link');
@@ -270,7 +254,7 @@ city = Array.from(cityA);
 for(let i = 0; i< cityName.length; i++){
   cityName[i].addEventListener('click',function(){
       var current = document.getElementsByClassName("active");
-      current[0].className = current[0].className.replace(" active", " ");
+      current[0].className = current[0].className.replace("active", "");
       this.className += " active";
      
       for(let j = 0; j< city.length; j++){
@@ -294,7 +278,7 @@ orderBlock = Array.from(orderBlockAr);
 for(let i = 0; i< orderTabs.length; i++){
   orderTabs[i].addEventListener('click',function(){
       var currentOrder = document.getElementsByClassName("active");
-      currentOrder[0].className = currentOrder[0].className.replace(" active", "");
+      currentOrder[0].className = currentOrder[0].className.replace("active", "");
       this.className += " active";
      
       for(let j = 0; j< orderBlock.length; j++){
@@ -353,6 +337,31 @@ for(let i = 0; i< orderInputs.length; i++){
 
 
 window.onload = function(){
+const btnBottomAr = document.querySelectorAll('.button__bottom .some');
+    btnBottom = Array.from(btnBottomAr);
+    
+    for(let i = 0; i< btnBottom.length; i++){
+      
+      let line = btnBottom[i].nextSibling.nextSibling;
+      
+      
+      let lineWidth = btnBottom[i].clientWidth;
+      line.style.width = lineWidth * 0.7 +'px';
+
+      btnBottom[i].addEventListener('mouseover', fullLine);
+      btnBottom[i].addEventListener('mouseleave', notFullLine);
+      function fullLine(){
+          line.style.width = lineWidth+'px';
+      }
+      function notFullLine(){
+          line.style.width = lineWidth * 0.7 +'px';
+      }
+        console.log(btnBottom[i].clientWidth); 
+      
+    }
+    
+
+  //brands directory work
   let actveSlideAr = document.querySelectorAll('.brands__slider .brand__name');
   let activeSlide = Array.from(actveSlideAr);
 
@@ -388,12 +397,13 @@ window.onload = function(){
          
     }
     for(let j = 0; j<= brandArrow.length; j++){
-      brandArrow[j].addEventListener('click',function(){
-        var current = document.getElementsByClassName('slick-active');
-        var currentImage = current[0].childNodes[1].childNodes[0].childNodes[3].dataset.img;
-        brandsWrapper.innerHTML = `<img src='${currentImage}' class='show__nice__text'></img>`;
-      })
-      
+      if(brandArrow!=''){
+        brandArrow[j].addEventListener('click',function(){
+          var current = document.getElementsByClassName('slick-active');
+          var currentImage = current[0].childNodes[1].childNodes[0].childNodes[3].dataset.img;
+          brandsWrapper.innerHTML = `<img src='${currentImage}' class='show__nice__text'></img>`;
+        })
+      }
     }
 }
 

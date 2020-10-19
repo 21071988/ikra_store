@@ -56,9 +56,8 @@
 
     <div class="promocode">
       <form action="">
-        <div>
+        <div class='promo__div'>
           <input type="text" name='promocodeValue' id='promocodeValue' >
-          <br>
           <label for="promocodeValue">У вас есть промокод? Можете ввести его сюда</label>
         </div>
         <button id='insert__promocode' type='submit'>
@@ -67,7 +66,7 @@
       </form>
     </div>
     <div class='button__bottom'>
-      <button>Продолжить</button>
+      <div class="some"><button>Продолжить</button></div>
       <div class="bottom__line"></div>
     </div>
     

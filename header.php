@@ -27,7 +27,7 @@
         </a>
       </li>
       <li>
-        <a href="/delivery/">
+        <a href="/info/">
           оплата и доставка
         </a>
       </li>

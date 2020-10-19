@@ -29,17 +29,23 @@
     </div>
     <div class="delivery__data">
       <div class="delivery__delivery order__block delivery__type__data">
-        <label for="order__data__lastname">Фамилия</label>
-        <input type="text" name='order__data__lastname'>
+        <label for="order__data__city">город</label>
+        <input type="text" name='order__data__city'>
         
-        <label for="order__data__name">имя</label>
-        <input type="text" name='order__data__name'>
+        <label for="order__data__street">улица</label>
+        <input type="text" name='order__data__street'>
 
-        <label for="order__data__phone">телефон</label>
-        <input type="text" name='order__data__phone'>
+        <label for="order__data__index">индекс</label>
+        <input type="text" name='order__data__index'>
 
-        <label for="order__data__email">email</label>
-        <input type="text" name='order__data__email'>
+        <label for="order__data__house">дом</label>
+        <input type="text" name='order__data__house'>
+
+        <label for="order__data__app">квартира/офис</label>
+        <input type="text" name='order__data__app'>
+
+        <label for="order__data__comment">комментарий</label>
+        <input type="text" name='order__data__comment'>
       </div>
       <div class="delivery__pickup order__block delivery__type__data">
         <p class='order__block__bold'>
@@ -118,8 +124,13 @@
     </div>
 
   </div>
-
-  <button class='order__button'type='submit'>Оформить заказ</button>
+    <div class="button__bottom button__bottom__order">
+      <div class="some">
+        <button class='order__button'type='submit'>Оформить заказ</button>
+      </div>
+      <div class="bottom__line"></div>
+    </div>
+  
   </form>
 </div>
 <?php require($_SERVER["DOCUMENT_ROOT"]."/footer.php");?>
