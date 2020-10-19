@@ -159,7 +159,7 @@ labelArray = Array.from(label);
 for(let i = 0; i< labelArray.length; i++){
     labelArray[i].addEventListener('click',function(){
         var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
+        current[0].className = current[0].className.replace("active", "");
         this.className += " active";
     });
 }
