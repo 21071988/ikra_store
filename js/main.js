@@ -159,7 +159,7 @@ labelArray = Array.from(label);
 for(let i = 0; i< labelArray.length; i++){
     labelArray[i].addEventListener('click',function(){
         var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace("active", "");
+        current[0].className = current[0].className.replace(" active", "");
         this.className += " active";
     });
 }
@@ -294,7 +294,7 @@ orderBlock = Array.from(orderBlockAr);
 for(let i = 0; i< orderTabs.length; i++){
   orderTabs[i].addEventListener('click',function(){
       var currentOrder = document.getElementsByClassName("active");
-      currentOrder[0].className = currentOrder[0].className.replace(" active", "");
+      currentOrder[0].className = currentOrder[0].className.replace("active", "");
       this.className += " active";
      
       for(let j = 0; j< orderBlock.length; j++){
@@ -396,19 +396,3 @@ window.onload = function(){
       
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
