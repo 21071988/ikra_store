@@ -29,6 +29,9 @@
 .w100{
 	width: 100%;
 }
+.bold{
+	font-weight: 600;
+}
 .w80{
 	width: 80%;
 	margin: 0 auto;
@@ -43,7 +46,10 @@
 .flex{
 	display: flex;
 }
-
+.green__input{
+	border-bottom:2px solid @hc !important;
+	color:@hc;
+}
 .allcenter{
 	justify-content: center;
 	align-items:center;
@@ -104,6 +110,18 @@ a{
 	&:hover{
 		cursor: pointer;
 		// color:@hc;
+	}
+}
+.active{
+	position: relative;
+	&:after{
+		content: '';
+    position: absolute;
+    left: 5%;
+    bottom: 0%;
+    width: 90%;
+    height: 1.5px;
+    background:@bl;
 	}
 }
 b{
@@ -909,6 +927,126 @@ footer{
 	animation: hd .5s forwards;
 }
 
+.order__wrapper{
+	margin:0 auto;
+}
+.order__button{
+	margin-top:@m2;
+			margin-left:38%;
+}
+.oc{
+	width: 30%;
+	margin:0 auto;
+}
+.order__data, .delivery__type, .payment__type{
+	.oc;
+}
+input{
+	border:none;
+		border-bottom: 1px solid @bl;
+		margin-bottom:@m;
+		z-index: 2;
+    background: none;
+		&:focus{
+			outline:none !important;
+		border-bottom: 2px solid @bl !important;
+		}
+}
+label{
+	z-index:1;
+}
+.order__block{
+	h1{
+		text-align: left;
+		font-size: 2rem;
+	}
+	.column;
+	margin-bottom:@m3;
+	input{
+		border:none;
+		border-bottom: 1px solid @bl;
+		margin-bottom:@m;
+		z-index: 2;
+    background: none;
+		&:focus{
+			outline:none !important;
+		border-bottom: 2px solid @bl !important;
+		}
+	}
+	label{
+		font-size: 0.8rem;
+		transform:translateY(22px);
+		.trans4;
+	}
+	h2{
+		// text-align: center;
+	}
+}
+.order__block__bold{
+			.bold;
+			margin-bottom: @m;
+}
+.payment__type{
+	.column;
+}
+.checking__order__wrapper{
+	position: relative;
+	.w100;
+	.oal, .oar{
+		width: 20px;
+		position: absolute;
+		top:50%;
+	}
+	.oal{
+		left:7%;
+		transform: rotateZ(180deg);
+	}
+	.oar{
+		left:91%;
+	}
+}
+.checking__order__block{
+	.column;
+	h2{
+		margin-left:calc(10% + 20px);
+	}
+}
+.checking__order{
+	width: 80%;
+	margin:0 auto;
+	.catalog__item{
+		margin:0 20px;
+	}
+	.old__price:after{
+		left:0;
+		width: 20%;
+	}
+}
+
+.delivery__type__menu{
+	.flex;
+	justify-content: space-around;
+}
+.delivery__data{
+	position: relative;
+	margin-top:@m2;
+}
+.delivery__type__data{
+		display: none;
+    opacity: 0;
+		transition: .4s;
+		min-height: 20vh;
+		margin-bottom: @m2;
+		&:first-child{
+			opacity: 1;
+			position: relative;
+			z-index:2;
+			.flex;
+		}
+		&:last-child{
+			margin-bottom: 80px;
+		}
+}
 @media screen and(max-width: 768px) {
 	
 }

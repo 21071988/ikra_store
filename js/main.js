@@ -85,8 +85,30 @@ $(document).ready(function(){
       $('.bal').on('click', function() {
         $('.brands__slider').slick('slickPrev');
       }); 
+      
 
+      // order check slider
+
+      $('.checking__order').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows:false
+      });
+
+
+      $('.oar').on('click', function() {
+      $('.checking__order').slick('slickNext');
+      });
+
+      $('.oal').on('click', function() {
+      $('.checking__order').slick('slickPrev');
+      }); 
 });
+
+
+
+
 
 document.querySelectorAll('.js-price').forEach(node => {
         node.textContent = new Intl.NumberFormat('ru-RU', {
@@ -248,7 +270,7 @@ city = Array.from(cityA);
 for(let i = 0; i< cityName.length; i++){
   cityName[i].addEventListener('click',function(){
       var current = document.getElementsByClassName("active");
-      current[0].className = current[0].className.replace(" active", "");
+      current[0].className = current[0].className.replace(" active", " ");
       this.className += " active";
      
       for(let j = 0; j< city.length; j++){
@@ -260,6 +282,75 @@ for(let i = 0; i< cityName.length; i++){
       }
   });
 }
+
+//order payment method block
+
+let orderTabsAr = document.querySelectorAll('.delivery__type__menu a');
+let orderBlockAr = document.querySelectorAll('.delivery__type__data');
+
+orderTabs = Array.from(orderTabsAr);
+orderBlock = Array.from(orderBlockAr);
+
+for(let i = 0; i< orderTabs.length; i++){
+  orderTabs[i].addEventListener('click',function(){
+      var currentOrder = document.getElementsByClassName("active");
+      currentOrder[0].className = currentOrder[0].className.replace(" active", "");
+      this.className += " active";
+     
+      for(let j = 0; j< orderBlock.length; j++){
+        if (j == i){
+          orderBlock[j].style.opacity = '1';
+          setTimeout(function(){
+            orderBlock[j].style.display = 'flex';
+          },500);
+        }else{
+          orderBlock[j].style.opacity = '0';
+          setTimeout(function(){
+            orderBlock[j].style.display = 'none';
+          },500);
+        }
+      }
+  });
+}
+//order label movement
+let orderInputsAr = document.querySelectorAll('.order__wrapper input');
+let orderInputs = Array.from(orderInputsAr);
+for(let i = 0; i< orderInputs.length; i++){
+  
+  orderInputs[i].onfocus = function(){
+    orderInputs[i].previousSibling.previousSibling.style.transform = "translateY(0px)";
+  }
+
+  orderInputs[i].onblur = function(){
+     if(!orderInputs[i].value){
+        orderInputs[i].previousSibling.previousSibling.style.transform = "translateY(22px)";
+      }  else{
+        orderInputs[i].classList.add('green__input');
+      }
+  }
+
+  
+  orderInputs[i].addEventListener('mouseover',function(){
+    orderInputs[i].previousSibling.previousSibling.style.transform = "translateY(0px)";
+  });
+
+  orderInputs[i].addEventListener('mouseleave',function(){
+    if(!orderInputs[i].value){
+      orderInputs[i].previousSibling.previousSibling.style.transform = "translateY(22px)";
+    }  else{
+      orderInputs[i].classList.add('green__input');
+    }
+  });
+}
+
+
+
+
+
+
+
+
+
 
 window.onload = function(){
   let actveSlideAr = document.querySelectorAll('.brands__slider .brand__name');
