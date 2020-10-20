@@ -580,7 +580,7 @@ footer{
 	width: 5px;
 	margin:0 5px;
 }
-.size__choosing{
+.size__choosing, .top__menu__choose__sizes{
 	input{
 		position: absolute;
     clip: rect(0,0,0,0);
@@ -588,7 +588,7 @@ footer{
 	}
 }
 
-.size__choosing__label{
+.size__choosing__label, .top__menu__choose__size{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -599,6 +599,13 @@ footer{
 	border-color:@bl !important;
 	color:#ffffff !important;
 }
+
+.top__menu__choose__size:not(:disabled):not(.disabled).active, .top__menu__choose__size:not(:disabled):not(.disabled):active, .show>.top__menu__choose__size.dropdown-toggle{
+	background-color:@bl !important;
+	border-color:@bl !important;
+	color:#ffffff !important;
+}
+
 .btn-secondary.focus, .btn-secondary:focus{
 	box-shadow: none !important;
 }
@@ -1081,6 +1088,30 @@ label{
 			margin-bottom: 80px;
 		}
 }
+.top__menu__links{
+	.flex;
+	margin-bottom:@m;
+	hr{
+		margin: 4px 5px;
+    width: 1px;
+    background: black;
+    border: none;
+	}
+	span{
+		margin:0 10px;
+		&:first-child{
+			margin-left:0;
+		}
+	}
+}
+.top__menu__choose__sizes form{
+	.flex;
+	label{
+		margin:0 5px;
+	}
+}
+
+
 @media screen and(max-width: 768px) {
 	
 }

@@ -154,6 +154,23 @@ for(let i = 0; i< labelArray.length; i++){
     });
 }
 
+//choosing size in catalog
+let labelC = document.querySelectorAll('.top__menu__choose__size');
+labelCArray = Array.from(labelC);
+for(let i = 0; i< labelCArray.length; i++){
+  labelCArray[i].addEventListener('click',function(){
+        var current = document.getElementsByClassName("active");
+        if(!!current){
+          console.log(current);
+          this.className += " active";
+        }else{
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        }
+        
+    });
+}
+
 
 //изменение количества добавляемых в корзину товаров
 

@@ -56,8 +56,29 @@
     </div>
   </div>
   <div class="catalog__part  right__part">
-    <div class="top__menu">
     
+    <div class="top__menu">
+      
+      <div class="top__menu__links">
+        <span>Размер</span>
+        <hr>
+        <span>цвет</span>
+        <hr>
+        <span>цена</span>
+        <hr>
+        <span>тип изделия</span>
+      </div>
+      <div class="top__menu__chooses">
+        <div class="top__menu__choose__sizes">
+          <form action="">
+          <label class='top__menu__choose__size' for="xs"><input type="checkbox" id="xs" name='size' value='xs' checked> xs</label>
+          <label class='top__menu__choose__size' for="s"><input type="checkbox" id="s" name='size' value='s' checked> s</label>
+          <label class='top__menu__choose__size' for="m"><input type="checkbox" id="m" name='size' value='m' checked> m</label>
+          <label class='top__menu__choose__size' for="l"><input type="checkbox" id="l" name='size' value='l' checked> l</label>
+          <label class='top__menu__choose__size' for="one-size"><input type="checkbox" id="one-size" name='one-size' value='one-size' checked> one-size</label>
+          </form>
+        </div>
+      </div>
     </div>
 
     <div class="catalog__pages">
