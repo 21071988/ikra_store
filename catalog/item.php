@@ -51,7 +51,7 @@
             </div>
 
             <div class='button__bottom'>
-            <div class='some'>В корзину</div>
+            <div class='some' id='to__basket'>В корзину</div>
               <div class="bottom__line"></div>
             </div>  
           </form>

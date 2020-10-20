@@ -9,7 +9,9 @@
 @m4:160px;
 @m250:250px;
 
-
+.rel{
+	position: relative !important;
+}
 .f2{
 	font-size: 2rem;
 }
@@ -257,6 +259,10 @@ footer{
 		width: 30px;
 		margin-top:10px;
 	}
+	.item__quantity{
+		font-size: 1.2rem;
+		margin-bottom: 0;
+	}
 }
 .catalog__pages{
 	display: grid;
@@ -276,6 +282,10 @@ footer{
 	p{
 		margin:10px 0;
 	}
+}
+
+#to__basket{
+	.trans4;
 }
 .sale__price{
 	color:@red;
@@ -332,6 +342,9 @@ footer{
 .basket__total{
 	margin-top:@m2;
 	.f2;
+}
+.item__basket__quantity{
+	margin-bottom:10px;
 }
 .promo__div{
 	.column;
@@ -580,7 +593,7 @@ footer{
 	width: 5px;
 	margin:0 5px;
 }
-.size__choosing, .top__menu__choose__sizes{
+.size__choosing, .top__menu__choose__sizes, .possibly__active{
 	input{
 		position: absolute;
     clip: rect(0,0,0,0);
@@ -588,19 +601,19 @@ footer{
 	}
 }
 
-.size__choosing__label, .top__menu__choose__size{
+.size__choosing__label, .possibly__active{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.size__choosing__label:not(:disabled):not(.disabled).active, .size__choosing__label:not(:disabled):not(.disabled):active, .show>.size__choosing__label.dropdown-toggle{
+.size__choosing__label:not(:disabled):not(.disabled).active, .size__choosing__label:not(:disabled):not(.disabled):active{
 	background-color:@bl !important;
 	border-color:@bl !important;
 	color:#ffffff !important;
 }
 
-.top__menu__choose__size:not(:disabled):not(.disabled).active, .top__menu__choose__size:not(:disabled):not(.disabled):active, .show>.top__menu__choose__size.dropdown-toggle{
+.possibly__active:not(:disabled):not(.disabled).active, .possibly__active:not(:disabled):not(.disabled):active{
 	background-color:@bl !important;
 	border-color:@bl !important;
 	color:#ffffff !important;
@@ -1110,7 +1123,32 @@ label{
 		margin:0 5px;
 	}
 }
-
+.top__menu__chooses{
+	margin-bottom:@m;
+	position: relative;
+	overflow: hidden;
+	background-color: #ffffff;
+}
+.top__menu__choose__sizes, .top__menu__choose__colors, .top__menu__choose__prices, .top__menu__choose__type{
+	position: absolute;
+	background-color: #ffffff;
+	top:1000px;
+}
+.top__menu__choose{
+	.flex;
+	margin-bottom:10px;
+	label{
+		margin:0px 5px;
+	}
+}
+.top__menu__choose__grid{
+	margin-bottom:10px;
+	label{
+		margin:3px 5px;
+	}
+	display: flex;
+	flex-wrap: wrap;
+}
 
 @media screen and(max-width: 768px) {
 	
