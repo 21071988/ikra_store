@@ -103,7 +103,19 @@ $(document).ready(function(){
 
       $('.oal').on('click', function() {
       $('.checking__order').slick('slickPrev');
-      }); 
+      });
+      
+      $('#submit__lk__form').click(function(){
+        $.post(
+            'https://edu.slim.technology/newitem.php', 
+             $("#lk__form").serialize(), // отправляемые данные          
+            
+            function(msg) { // получен ответ сервера  
+                $('#my_form').hide('slow');
+                $('#answer__message').html(msg);
+            }
+        );
+      });
 });
 
 

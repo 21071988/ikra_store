@@ -1,8 +1,10 @@
 <?php require($_SERVER["DOCUMENT_ROOT"]."/header.php");?>
   <div class="wrapper lk">
   <h1>Личный кабинет</h1>
-    <div class="personal__data">
+    <div class="personal__data" >
+    <form action="" id='lk__form'>
       <div>
+      <input type="text" name='test__input' value='testInput'>
         <p class="lk__prop">Фамилия</p>
         <p class="lk__prop__value">Иванова</p>
 
@@ -24,10 +26,12 @@
 
         <p class="lk__prop">адрес доставки</p>
         <p class="lk__prop__value">заполните это поле</p>
-
+      
+      <button id='submit__lk__form' type="submit">Обновить данные</button>
+      <div id="answer__message"></div>
       </div>
     </div>
-    
+    </form>
     <div class="offers">
       <h2>Спецпредложения</h2>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, sint vitae excepturi adipisci est recusandae necessitatibus illo consectetur iure officia, ut culpa, ipsam veniam ducimus? Quod provident laborum exercitationem et ut totam voluptates dolore, ducimus asperiores inventore necessitatibus enim, culpa repellat! Nobis quis porro soluta blanditiis libero fuga veritatis dolorum?</p>
