@@ -4,28 +4,27 @@
     <div class="personal__data" >
     <form action="" id='lk__form'>
       <div>
-      <input type="text" name='test__input' value='testInput'>
         <p class="lk__prop">Фамилия</p>
-        <p class="lk__prop__value">Иванова</p>
+        <input accept="text/rtf,text/html,text/plain,application/pdf" value='Иванова' name='lk__prop__lastname' >
 
         <p class="lk__prop">имя</p>
-        <p class="lk__prop__value">Анастасия</p>
+        <input accept="text/rtf,text/html,text/plain,application/pdf" value='Анастасия' name='lk__prop__name'>
 
         <p class="lk__prop">телефон</p>
-        <p class="lk__prop__value">8 914 123 83 88</p>
+        <input accept="text/rtf,text/html,text/plain,application/pdf" value='8 914 123 83 88' name='lk__prop__phone'>
 
         <p class="lk__prop">email</p>
-        <p class="lk__prop__value">someemail@gmail.com</p>
+        <input accept="text/rtf,text/html,text/plain,application/pdf" value='someemail@gmail.com' name='lk__prop__email'>
       </div>
       <div>
         <p class="lk__prop">размер вашей скидки</p>
-        <p class="lk__prop__value">5%</p>
+        <input accept="text/rtf,text/html,text/plain,application/pdf" value='5%' name='lk__prop__sale'>
 
         <p class="lk__prop">до следующего уровня </p>
-        <p class="lk__prop__value">27 282 Р</p>
+        <input accept="text/rtf,text/html,text/plain,application/pdf" value='27 282 Р' name='lk__prop__amount'>
 
         <p class="lk__prop">адрес доставки</p>
-        <p class="lk__prop__value">заполните это поле</p>
+        <input accept="text/rtf,text/html,text/plain,application/pdf" value='Иванова' placeholder='заполните это поле' name='lk__prop__adress'>
       
       <button id='submit__lk__form' type="submit">Обновить данные</button>
       <div id="answer__message"></div>

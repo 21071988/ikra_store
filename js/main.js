@@ -115,6 +115,7 @@ $(document).ready(function(){
                 $('#answer__message').html(msg);
             }
         );
+        return false;
       });
 });
 
@@ -462,3 +463,5 @@ const btnBottomAr = document.querySelectorAll('.button__bottom .some');
       }
     }
 }
+
+

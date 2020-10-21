@@ -681,7 +681,13 @@ footer{
 		width: 60%;
 		margin-left: 25%;
 		margin-bottom: @m3;
-		
+		input{
+			border:none;
+			width: fit-content;
+			&:focus{
+				border-bottom:1px solid @bl !important;
+			}
+		}
 		div{
 			flex:1;
 		}
