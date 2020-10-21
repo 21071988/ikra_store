@@ -675,25 +675,7 @@ footer{
 	.f15;
 	margin-bottom:@m2;
 }
-.personal__data{
-	form{
-		.flex;
-		width: 60%;
-		margin-left: 25%;
-		margin-bottom: @m3;
-		input{
-			border:none;
-			width: fit-content;
-			&:focus{
-				border-bottom:1px solid @bl !important;
-			}
-		}
-		div{
-			flex:1;
-		}
-	}
-	
-}
+
 .offers{
 	width: 50%;
 	margin-bottom: 150px;
@@ -1011,8 +993,27 @@ input{
     background: none;
 		&:focus{
 			outline:none !important;
-		border-bottom: 2px solid @bl !important;
+		border-bottom: 2px solid @bl;
 		}
+}
+.personal__data{
+	form{
+		.flex;
+		width: 60%;
+		margin-left: 25%;
+		margin-bottom: @m3;
+		input{
+			border:none;
+			width: fit-content;
+			&:focus{
+				border-bottom:1px solid @bl;
+			}
+		}
+		div{
+			flex:1;
+		}
+	}
+	
 }
 label{
 	z-index:1;

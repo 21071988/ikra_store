@@ -351,6 +351,34 @@ for(let i = 0; i< orderInputs.length; i++){
 
 
 window.onload = function(){
+let lkFormInputsAr = document.querySelectorAll('#lk__form input');
+let lkFormInputs = Array.from(lkFormInputsAr);
+for(let i=0; i< lkFormInputs.length; i++){
+  if(lkFormInputs[i].value){
+    lkFormInputs[i].style.width = `${lkFormInputs[i].value.length*11}px`;
+  }
+  else{
+    lkFormInputs[i].style.width = `70%`;
+  }
+  lkFormInputs[i].addEventListener('mouseover',function(){
+    if(!lkFormInputs[i].value){
+      lkFormInputs[i].style.borderBottom = `1px solid black`;
+    }
+  });
+  lkFormInputs[i].addEventListener('mouseleave',function(){
+    lkFormInputs[i].style.borderBottom = `none`;
+  });
+  lkFormInputs[i].addEventListener('onfocus',function(){
+    if(!lkFormInputs[i].value){
+      lkFormInputs[i].style.borderBottom = `1px solid black`;
+    }
+    
+  });
+
+  
+}
+
+
 
 let blockTriggerAr = document.querySelectorAll('.top__menu__links span');
 let blockTrigger = Array.from(blockTriggerAr);

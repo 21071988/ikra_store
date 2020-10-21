@@ -8,7 +8,7 @@
         <input accept="text/rtf,text/html,text/plain,application/pdf" value='Иванова' name='lk__prop__lastname' >
 
         <p class="lk__prop">имя</p>
-        <input accept="text/rtf,text/html,text/plain,application/pdf" value='Анастасия' name='lk__prop__name'>
+        <input accept="text/rtf,text/html,text/plain,application/pdf" value='' name='lk__prop__name'>
 
         <p class="lk__prop">телефон</p>
         <input accept="text/rtf,text/html,text/plain,application/pdf" value='8 914 123 83 88' name='lk__prop__phone'>
