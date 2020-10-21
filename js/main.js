@@ -195,7 +195,7 @@ function plusOne(){
 };
 
 
-//добавление товаров в корзину
+
 
 
 
@@ -366,6 +366,10 @@ if(toBasketBtn != null){
     let itemQuantity = document.getElementById('item__quantity');
     let newAmount = parseInt(bQuantity.innerText) + parseInt(itemQuantity.innerText);
     bQuantity.innerText = newAmount;
+    bQuantity.classList.add('bquantity__animation');
+    setTimeout(function(){
+      bQuantity.classList.remove('bquantity__animation');
+    },1100);
     itemQuantity.innerText = 1;
     toBasketBtn.innerText = "товар в корзине";
     setTimeout(function(){
