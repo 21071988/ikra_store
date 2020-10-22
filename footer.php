@@ -4,20 +4,20 @@
         <div>
           <span>Подписаться на рассылку</span>
         </div>
-        <a href="lk/">Личный кабинет</a>
+        <a href="/lk/">Личный кабинет</a>
     </div>
 
     
-    <a href="index.php">
+    <a href="/index.php">
       <img class='logo__footer' src="/images/svg/logo__white.svg" alt="">
     </a>
     <a href="https://slim.technology/" class='slim'>дизайн и разработка slim.technology</a>
   </div>
   <div class="footer__div footer__div__two">
-    <a href="">Оплата</a>
-    <a href="#"> доставка</a>
-    <a href="#">возврат</a>
-    <a href="#">Оферта</a>
+    <a href="/info">Оплата</a>
+    <a href="/info"> доставка</a>
+    <a href="/info">возврат</a>
+    <a href="/info">Оферта</a>
   </div>
   <div class="footer__div footer__div__three">
    <div>
@@ -32,10 +32,10 @@
         <div>
           <b>Контакты</b>
           <br>
-          <a href="">8-908-997-19-03</a>
+          <a href="tel:89089971903">8-908-997-19-03</a>
           <a href="mailto:ikra@gmail.com">ikra@gmail.com</a>
         </div>
-        <a href="https://www.instagram.com/ikra.store/">instagram</a>
+        <a href="https://www.instagram.com/ikra.store/" target="blank">instagram</a>
       </div>
   </div>
 </footer>

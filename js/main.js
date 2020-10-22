@@ -113,6 +113,18 @@ $(document).ready(function(){
           );
           return false;
         });
+
+        $('#showMore').click(function(){
+          const page = $('#showMore').data('page');
+          const url = '/ajax/items.php?page='+page;
+          $.ajax({
+            url: url,
+          }).then(function(result){
+            $('.catalog__pages').append(result);          
+          })
+        });
+
+
       });
 
 
@@ -348,6 +360,14 @@ for(let i = 0; i< orderInputs.length; i++){
 
 
 window.onload = function(){
+//show more pagination
+const showMoreBtn = document.getElementById('showMore');
+showMoreBtn.addEventListener('click',function(){
+  showMoreBtn.dataset.page;
+})
+
+
+
 //email validation
 
 let sbmBtn = document.getElementById('submit__lk__form');

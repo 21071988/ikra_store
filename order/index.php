@@ -6,7 +6,7 @@
   <div class="order__data order__block">
     <h1>оформление заказа</h1>
     <h2>общие данные</h2>
-    <label for="order__data__lastname">Фамилия</label>
+    <label for="order__data__lastname" required>Фамилия</label>
     <input type="text" name='order__data__lastname'>
     
     <label for="order__data__name">имя</label>
