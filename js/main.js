@@ -106,20 +106,17 @@ $(document).ready(function(){
       });
       
       $('#submit__lk__form').click(function(){
+        $('#submit__lk__form').text("Данные обновлены");
         $.post(
-            'https://edu.slim.technology/newitem.php', 
-             $("#lk__form").serialize(), // отправляемые данные          
-            
-            function(msg) { // получен ответ сервера  
-                $('#my_form').hide('slow');
-                $('#answer__message').html(msg);
-            }
-        );
-        return false;
+              '/post.php', 
+              $("#lk__form").serialize(), // отправляемые данные          
+          );
+          return false;
+        });
       });
-});
 
 
+      
 
 
 
@@ -351,9 +348,28 @@ for(let i = 0; i< orderInputs.length; i++){
 
 
 window.onload = function(){
+//email validation
+
+let sbmBtn = document.getElementById('submit__lk__form');
+const emailError = document.getElementById('error__validation');
+
+sbmBtn.addEventListener('click', function(){
+    var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+    var address = document.getElementById('lk__prop__email');
+        if(reg.test(address.value) == false) {
+          emailError.style.opacity = '1';
+          address.style.borderBottom = '1px solid #EA2C32';
+           return false;
+        }else{
+          console.log('yeeee');
+          }
+});
+
+//input form lk styles
 let lkFormInputsAr = document.querySelectorAll('#lk__form input');
 let lkFormInputs = Array.from(lkFormInputsAr);
-for(let i=0; i< lkFormInputs.length; i++){
+
+for(let i=0; i< lkFormInputs.length; i++){ 
   if(lkFormInputs[i].value){
     lkFormInputs[i].style.width = `${lkFormInputs[i].value.length*11}px`;
   }
@@ -361,25 +377,35 @@ for(let i=0; i< lkFormInputs.length; i++){
     lkFormInputs[i].style.width = `70%`;
   }
   lkFormInputs[i].addEventListener('mouseover',function(){
-    if(!lkFormInputs[i].value){
-      lkFormInputs[i].style.borderBottom = `1px solid black`;
-    }
+    lkFormInputs[i].style.borderBottom = `1px solid black`;
   });
+  
   lkFormInputs[i].addEventListener('mouseleave',function(){
     lkFormInputs[i].style.borderBottom = `none`;
   });
-  lkFormInputs[i].addEventListener('onfocus',function(){
-    if(!lkFormInputs[i].value){
-      lkFormInputs[i].style.borderBottom = `1px solid black`;
-    }
-    
-  });
-
   
+  lkFormInputs[i].addEventListener('onfocus',function(){
+   lkFormInputs[i].style.borderBottom = `1px solid black`;  
+  });
+  
+  lkFormInputs[i].addEventListener('click',function(){
+    if(sbmBtn.innerText = "Данные обновлены"){
+      sbmBtn.innerText = "Обновить данные";
+    }
+      lkFormInputs[i].style.borderBottom = `1px solid black`;        
+  });
 }
 
 
+//phone mask
+var element = document.getElementById('lk__phone');
+var maskOptions = {
+  mask: '+{7}(000)000-00-00'
+};
+var mask = IMask(element, maskOptions);
 
+
+//catalog top menu turning on
 let blockTriggerAr = document.querySelectorAll('.top__menu__links span');
 let blockTrigger = Array.from(blockTriggerAr);
 
@@ -399,6 +425,21 @@ for(let i=0; i< blockTrigger.length; i++){
   })
 }
 
+//arrows animating heart
+let arAr = document.querySelectorAll('.heart__arrow');
+let ar = Array.from(arAr);
+const heart = document.getElementById('heart')
+for(let i=0; i< ar.length; i++){
+  ar[i].addEventListener('click',function(){
+    heart.classList.add('beating__heart');  
+    setTimeout(function(){
+      heart.classList.remove('beating__heart');  
+    },600);
+  })
+}
+
+
+//to Basket animation
 const toBasketBtn = document.getElementById('to__basket');
 if(toBasketBtn != null){
   toBasketBtn.addEventListener('click',function(){
@@ -420,8 +461,7 @@ if(toBasketBtn != null){
 }
 
 
-
-
+//every link with bottom line animation
 const btnBottomAr = document.querySelectorAll('.button__bottom .some');
     btnBottom = Array.from(btnBottomAr);
     
@@ -446,7 +486,7 @@ const btnBottomAr = document.querySelectorAll('.button__bottom .some');
     }
     
 
-  //brands directory work
+//brands directory work
   let actveSlideAr = document.querySelectorAll('.brands__slider .brand__name');
   let activeSlide = Array.from(actveSlideAr);
 

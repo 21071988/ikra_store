@@ -667,10 +667,12 @@ footer{
 }
 
 .lk__prop{
-	font-size: 15px;
+	font-size: 12px;
 	margin-bottom:10px;
 }
-
+#lk__phone{
+	width: 30% !important;
+}
 .lk__prop__value{
 	.f15;
 	margin-bottom:@m2;
@@ -1190,6 +1192,32 @@ label{
 		transform:translateY(0);
 	}
 }
+
+@keyframes bheart{
+	0%{
+		width: 32px;
+	}
+	100%{
+		width: 30px;
+	}
+}
+.beating__heart{
+	animation:bheart .5s forwards;
+}
+#lk__prop__email{
+	margin-bottom:0 !important;
+}
+#error__validation{
+	font-size: 11px;
+    color:@red;
+		opacity: 0;
+		.trans4;
+}
+
+
+
+
+
 
 @media screen and(max-width: 768px) {
 	
