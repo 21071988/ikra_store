@@ -9,6 +9,9 @@
 @m4:160px;
 @m250:250px;
 
+body{
+	.trans4;
+}
 .rel{
 	position: relative !important;
 }
@@ -1020,17 +1023,23 @@ input{
 label{
 	z-index:1;
 }
+.error__sign{
+	color:@red;
+	font-size: 12px;
+	opacity:0;
+	.trans4;
+}
 .order__block{
 	h1{
 		text-align: left;
 		font-size: 2rem;
 	}
 	.column;
-	margin-bottom:@m3;
+	margin-bottom:@m;
 	input{
 		border:none;
 		border-bottom: 1px solid @bl;
-		margin-bottom:@m;
+		margin-bottom:3px;
 		z-index: 2;
     background: none;
 		&:focus{

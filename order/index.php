@@ -6,17 +6,21 @@
   <div class="order__data order__block">
     <h1>оформление заказа</h1>
     <h2>общие данные</h2>
-    <label for="order__data__lastname" required>Фамилия</label>
-    <input type="text" name='order__data__lastname'>
+    <label for="order__data__lastname" >Фамилия</label>
+    <input type="text" name='order__data__lastname' class='required'>
+    <p class='error__sign'>заполните это поле, пожалуйста</p>
     
     <label for="order__data__name">имя</label>
-    <input type="text" name='order__data__name'>
+    <input type="text" name='order__data__name' class='required'>
+    <p class='error__sign'>заполните это поле, пожалуйста</p>
 
     <label for="order__data__phone">телефон</label>
-    <input type="text" name='order__data__phone'>
+    <input type="text" name='order__data__phone' class='required' id='lk__phone'>
+    <p class='error__sign'>заполните это поле, пожалуйста</p>
 
     <label for="order__data__email">email</label>
-    <input type="text" name='order__data__email'>
+    <input type="text" name='order__data__email' class='required'>
+    <p class='error__sign'>заполните это поле, пожалуйста</p>
   </div>
 
 
@@ -30,20 +34,25 @@
     <div class="delivery__data">
       <div class="delivery__delivery order__block delivery__type__data">
         <label for="order__data__city">город</label>
-        <input type="text" name='order__data__city'>
-        
+        <input type="text" name='order__data__city' class='required'>
+        <p class='error__sign'>заполните это поле, пожалуйста</p>
+
         <label for="order__data__street">улица</label>
-        <input type="text" name='order__data__street'>
+        <input type="text" name='order__data__street' class='required'>
+        <p class='error__sign'>заполните это поле, пожалуйста</p>
 
         <label for="order__data__index">индекс</label>
-        <input type="text" name='order__data__index'>
+        <input type="text" name='order__data__index' class='required'>
+        <p class='error__sign'>заполните это поле, пожалуйста</p>
 
         <label for="order__data__house">дом</label>
-        <input type="text" name='order__data__house'>
+        <input type="text" name='order__data__house' class='required'>
+        <p class='error__sign'>заполните это поле, пожалуйста</p>
 
         <label for="order__data__app">квартира/офис</label>
-        <input type="text" name='order__data__app'>
-
+        <input type="text" name='order__data__app' class='required'>
+        <p class='error__sign'>заполните это поле, пожалуйста</p>
+        
         <label for="order__data__comment">комментарий</label>
         <input type="text" name='order__data__comment'>
       </div>
@@ -126,7 +135,7 @@
   </div>
     <div class="button__bottom button__bottom__order">
       <div class="some">
-        <button class='order__button'type='submit'>Оформить заказ</button>
+        <button id='order__button' type='submit'>Оформить заказ</button>
       </div>
       <div class="bottom__line"></div>
     </div>

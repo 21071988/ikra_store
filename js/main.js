@@ -336,6 +336,14 @@ for(let i = 0; i< orderInputs.length; i++){
       }
   }
 
+  orderInputs[i].addEventListener('keydown',function(){
+    if(!orderInputs[i].value){
+      orderInputs[i].previousSibling.previousSibling.style.transform = "translateY(22px)";
+    }  else{
+      orderInputs[i].previousSibling.previousSibling.style.transform = "translateY(0px)";
+    }
+  })
+
   
   orderInputs[i].addEventListener('mouseover',function(){
     orderInputs[i].previousSibling.previousSibling.style.transform = "translateY(0px)";
@@ -360,6 +368,38 @@ for(let i = 0; i< orderInputs.length; i++){
 
 
 window.onload = function(){
+//checking errors in order form
+
+let orderBtn = document.getElementById('order__button');
+
+let orderInputsAr = document.querySelectorAll('.required');
+let orderInputs = Array.from(orderInputsAr);
+
+let errorSignAr = document.querySelectorAll('.error__sign');
+let errorSign = Array.from(errorSignAr);
+
+orderBtn.addEventListener('click', function(e){
+  for(let i=0;i<orderInputs.length;i++){
+    if(!orderInputs[i].value){
+      
+      orderInputs[i].style.borderBottom = '1px solid #EA2C32';
+      errorSign[i].style.opacity = '1';
+      console.log(orderInputs[0].offsetTop + 100);
+      window.scrollTo(0, orderInputs[0].offsetTop-80);
+    }
+    orderInputs[i].onblur = function(){
+      if(orderInputs[i].value){
+        orderInputs[i].style.borderBottom = '1px solid #13100D';
+        errorSign[i].style.display = 'none';
+        console.log('done');
+      }
+    }
+  }
+  e.preventDefault();
+});
+
+
+
 //show more pagination
 const showMoreBtn = document.getElementById('showMore');
 showMoreBtn.addEventListener('click',function(){
