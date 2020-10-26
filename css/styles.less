@@ -611,11 +611,12 @@ footer{
 	align-items: center;
 }
 
-// .size__choosing__label:not(:disabled):not(.disabled).active, .size__choosing__label:not(:disabled):not(.disabled):active{
-// 	background-color:@bl !important;
-// 	border-color:@bl !important;
-// 	color:#ffffff !important;
-// }
+
+.size__choosing__label:not(:disabled):not(.disabled).active{
+	background-color:@bl !important;
+	border-color:@bl !important;
+	color:#ffffff !important;
+}
 
 .possibly__active:not(:disabled):not(.disabled).active{
 	background-color:@bl !important;
@@ -1226,6 +1227,13 @@ label{
 #showMore{
 	margin:@m2 auto;
 	border-bottom: 2px solid @bl;
+}
+#show__items__button{
+	font-size: 1rem;
+	margin-left:50px;
+	border-bottom: 1px solid @bl;
+	opacity: 0;
+	.trans4;
 }
 
 

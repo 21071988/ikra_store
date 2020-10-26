@@ -58,7 +58,7 @@
   <div class="catalog__part  right__part">
     
     <div class="top__menu">
-      
+    <form action="">
       <div class="top__menu__links">
         <span>Размер</span>
         <hr>
@@ -67,10 +67,13 @@
         <span>цена</span>
         <hr>
         <span>тип изделия</span>
+      
+        <button type='submit' id='show__items__button'>Показать</button>
+        
       </div>
       <div class="top__menu__chooses">
         
-        <form action="">
+        
         <div class="top__menu__choose__sizes top__menu__choose its__block" id='block__sizes'>
           <label class='top__menu__choose__size possibly__active' for="xs"><input type="checkbox" id="xs" name='size' value='xs' checked> xs</label>
           <label class='top__menu__choose__size possibly__active' for="s"><input type="checkbox" id="s" name='size' value='s' checked> s</label>
@@ -121,9 +124,11 @@
           <label class='top__menu__choose__color possibly__active' for="earings"><input type="checkbox" id="earings" name='size' value='earings' checked> earings</label>  
         </div>
 
-        </form>
+        
+      
       </div>
-    </div>
+      </form>
+  </div>
 
     <div class="catalog__pages">
       

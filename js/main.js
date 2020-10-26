@@ -178,11 +178,15 @@ for(let i = 0; i< labelArray.length; i++){
 
 //choosing size in catalog
 let labelC = document.querySelectorAll('.possibly__active');
+let catalogShowBtn = document.getElementById('show__items__button');
 labelCArray = Array.from(labelC);
 for(let i = 0; i< labelCArray.length; i++){
   labelCArray[i].addEventListener('click',function(){
         var currentС = document.getElementsByClassName("active");
-          this.className += " active";        
+        this.className += " active";
+        catalogShowBtn.style.opacity = '1';
+
+
     });
 }
 
@@ -377,34 +381,39 @@ let orderInputs = Array.from(orderInputsAr);
 
 let errorSignAr = document.querySelectorAll('.error__sign');
 let errorSign = Array.from(errorSignAr);
-
-orderBtn.addEventListener('click', function(e){
-  for(let i=0;i<orderInputs.length;i++){
-    if(!orderInputs[i].value){
-      
-      orderInputs[i].style.borderBottom = '1px solid #EA2C32';
-      errorSign[i].style.opacity = '1';
-      console.log(orderInputs[0].offsetTop + 100);
-      window.scrollTo(0, orderInputs[0].offsetTop-80);
-    }
-    orderInputs[i].onblur = function(){
-      if(orderInputs[i].value){
-        orderInputs[i].style.borderBottom = '1px solid #13100D';
-        errorSign[i].style.display = 'none';
-        console.log('done');
+if(orderBtn){
+  orderBtn.addEventListener('click', function(e){
+    for(let i=0;i<orderInputs.length;i++){
+      if(!orderInputs[i].value){
+        
+        orderInputs[i].style.borderBottom = '1px solid #EA2C32';
+        errorSign[i].style.opacity = '1';
+        console.log(orderInputs[0].offsetTop + 100);
+        window.scrollTo(0, orderInputs[0].offsetTop-80);
+      }
+      orderInputs[i].onblur = function(){
+        if(orderInputs[i].value){
+          orderInputs[i].style.borderBottom = '1px solid #13100D';
+          errorSign[i].style.display = 'none';
+          console.log('done');
+        }
       }
     }
-  }
-  e.preventDefault();
-});
+    e.preventDefault();
+  });
+}
+
 
 
 
 //show more pagination
 const showMoreBtn = document.getElementById('showMore');
-showMoreBtn.addEventListener('click',function(){
-  showMoreBtn.dataset.page;
-})
+if(showMoreBtn){
+  showMoreBtn.addEventListener('click',function(){
+    showMoreBtn.dataset.page;
+  })
+}
+
 
 
 
@@ -412,8 +421,8 @@ showMoreBtn.addEventListener('click',function(){
 
 let sbmBtn = document.getElementById('submit__lk__form');
 const emailError = document.getElementById('error__validation');
-
-sbmBtn.addEventListener('click', function(){
+if(sbmBtn){
+  sbmBtn.addEventListener('click', function(){
     var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
     var address = document.getElementById('lk__prop__email');
         if(reg.test(address.value) == false) {
@@ -424,6 +433,8 @@ sbmBtn.addEventListener('click', function(){
           console.log('yeeee');
           }
 });
+}
+
 
 //input form lk styles
 let lkFormInputsAr = document.querySelectorAll('#lk__form input');
@@ -459,10 +470,13 @@ for(let i=0; i< lkFormInputs.length; i++){
 
 //phone mask
 var element = document.getElementById('lk__phone');
-var maskOptions = {
-  mask: '+{7}(000)000-00-00'
-};
-var mask = IMask(element, maskOptions);
+if(element){
+  var maskOptions = {
+    mask: '+{7}(000)000-00-00'
+  };
+  var mask = IMask(element, maskOptions);
+  
+}
 
 
 //catalog top menu turning on
