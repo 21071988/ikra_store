@@ -457,6 +457,27 @@ if(sbmBtn){
 });
 }
 
+//reg email validation
+
+let regSbmBtn = document.getElementById('reg__btn');
+const regEmailError = document.getElementById('error__validation');
+if(regSbmBtn){
+  regSbmBtn.addEventListener('click', function(e){
+    var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+    var address = document.getElementById('lk__prop__email');
+        if(reg.test(address.value) == false) {
+          regEmailError.style.opacity = '1';
+          address.classList.remove('green__input');
+          address.classList.add('red__input');
+          e.preventDefault();
+          return false;
+        }else{
+          console.log('yeeee');
+          }
+    
+});
+}
+
 
 //input form lk styles
 let lkFormInputsAr = document.querySelectorAll('#lk__form input');
