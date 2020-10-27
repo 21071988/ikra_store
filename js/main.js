@@ -394,29 +394,39 @@ for(let i = 0; i< orderInputs.length; i++){
 
 
 window.onload = function(){
+//search block appearance
+let searchBtn = document.getElementById('search__icon');
+let searchWindow = document.getElementById('search');
+let searchWindowClosingBtn = document.getElementById('closing__search__button');
+console.log(searchWindowClosingBtn);
+
+(searchBtn ? searchBtn.addEventListener('click', ()=> searchWindow.classList.add('top0') ) : 1);
+(searchWindowClosingBtn ? searchWindowClosingBtn.addEventListener('click', ()=> searchWindow.classList.remove('top0') ) : 1);
+
+
 //checking errors in order form
 
 let orderBtn = document.getElementById('order__button');
 
-let orderInputsAr = document.querySelectorAll('.required');
-let orderInputs = Array.from(orderInputsAr);
+let orderInputsReqAr = document.querySelectorAll('.required');
+let orderInputsReq = Array.from(orderInputsReqAr);
 
 let errorSignAr = document.querySelectorAll('.error__sign');
 let errorSign = Array.from(errorSignAr);
 if(orderBtn){
   orderBtn.addEventListener('click', function(e){
-    for(let i=0;i<orderInputs.length;i++){
-      if(!orderInputs[i].value){
+    for(let i=0;i<orderInputsReq.length;i++){
+      if(!orderInputsReq[i].value){
         
-        orderInputs[i].style.borderBottom = '1px solid #EA2C32';
+        orderInputsReq[i].style.borderBottom = '1px solid #EA2C32';
         errorSign[i].style.opacity = '1';
-        console.log(orderInputs[0].offsetTop + 100);
-        window.scrollTo(0, orderInputs[0].offsetTop-80);
+        console.log(orderInputsReq[0].offsetTop + 100);
+        window.scrollTo(0, orderInputsReq[0].offsetTop-80);
       }
-      orderInputs[i].onblur = function(){
-        if(orderInputs[i].value){
-          orderInputs[i].style.borderBottom = '1px solid #13100D';
-          errorSign[i].style.display = 'none';
+      orderInputsReq[i].onblur = function(){
+        if(orderInputsReq[i].value){
+          orderInputsReq[i].style.borderBottom = '1px solid #13100D';
+          orderInputsReq[i].style.display = 'none';
           console.log('done');
         }
       }
@@ -598,8 +608,6 @@ const btnBottomAr = document.querySelectorAll('.button__bottom .some');
       function notFullLine(){
           line.style.width = lineWidth * 0.7 +'px';
       }
-        console.log(btnBottom[i].clientWidth); 
-      
     }
     
 
@@ -647,6 +655,6 @@ const btnBottomAr = document.querySelectorAll('.button__bottom .some');
         })
       }
     }
-}
+  }
 
 

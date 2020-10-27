@@ -7,7 +7,7 @@
         <a  class="form__type">вход</a>
       </div>
       <div class="reg__widnow__form">
-        <form action="" id="reg__form" class='reg__form order__wrapper'>
+        <form action="" id="reg__form" class='reg__form order__wrapper' method="post">
           <label for="reg__login">email</label>
           <input type="text" name='reg__login' id='lk__prop__email'>
           <p id='error__validation'>Введите корректный email</p>
@@ -19,7 +19,7 @@
           <button id='reg__btn'>начать</button>
         </form>
 
-        <form action="" id="auth__form" class='reg__form order__wrapper'>
+        <form action="" id="auth__form" class='reg__form order__wrapper' method="post">
           <label for="auth__login">email</label>
           <input type="text" name='auth__login' id='lk__prop__email'>
           <p class='auth__error__validation'>Введите правильный логин</p>

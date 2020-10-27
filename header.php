@@ -14,6 +14,17 @@
 </head>
 <body>
 <header>
+<div id="search">
+    <div id='closing__search__button'>
+      <hr>
+      <hr>
+    </div>
+    <form action="" method='get'>
+      <input type="text">
+      <button>искать</button>
+    </form>
+  </div>
+
   <div class='logo__div'>
       <a href="/index.php">
         <img src="/images/svg/logo.svg" alt="">
@@ -43,8 +54,10 @@
       </li>
     </ul>
   </div>
+
+  
   <div class="header__icons">
-      <a href="">
+      <a id='search__icon'>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.78 35.22"><defs><style>.cls-l{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><circle class="cls-l" cx="18.43" cy="14.35" r="13.35"/><line class="cls-l" x1="9.36" y1="24.15" x2="0.77" y2="34.59"/></g></g></svg>
       </a>
       <a href="/lk">
