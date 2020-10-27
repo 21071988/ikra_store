@@ -248,7 +248,29 @@ for(let i = 0; i< itemToDelete.length; i++){
   });
 }
 
+//reg block
+let regAr = document.querySelectorAll('.reg__window__menu a');
+let regFormAr = document.querySelectorAll('.reg__widnow__form form');
 
+reg = Array.from(regAr);
+regForm = Array.from(regFormAr);
+for(let i = 0; i< regAr.length; i++){
+  regAr[i].addEventListener('click',function(){
+      for(let j = 0; j< regForm.length; j++){
+        if (j == i){
+          regForm[j].style.opacity = '1';
+          setTimeout(
+            ()=>regForm[j].style.display = 'flex'
+          ,500);
+        }else{
+          regForm[j].style.opacity = '0';
+          setTimeout(
+            ()=>regForm[j].style.display = 'none'
+          ,500);
+        }
+      }
+  });
+}
 
 //info block
 let tabs = document.querySelectorAll('.nav-link');
