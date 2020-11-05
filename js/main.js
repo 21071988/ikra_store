@@ -120,7 +120,9 @@ $(document).ready(function(){
           $.ajax({
             url: url,
           }).then(function(result){
-            $('.catalog__pages').append(result);          
+            $('#showMore').remove();
+            $('.catalog__pages').append(result);
+            // $('.catalog__pages').append('#showMore');         
           })
         });
 
@@ -274,11 +276,14 @@ for(let i = 0; i< regAr.length; i++){
 
 //info block
 let tabs = document.querySelectorAll('.nav-link');
+let textsDiv = document.querySelectorAll('.info');
 let texts = document.querySelectorAll('.info__text p');
-
 tabsArray = Array.from(tabs);
 textsArray = Array.from(texts);
 for(let i = 0; i< tabsArray.length; i++){
+  let textsHeight = textsArray[3].clientHeight;
+  console.log(textsHeight);
+  textsDiv[0].style.height = textsHeight +'px';
   tabsArray[i].addEventListener('click',function(){
       var current = document.getElementsByClassName("active");
       current[0].className = current[0].className.replace(" active", "");
@@ -398,7 +403,6 @@ window.onload = function(){
 let searchBtn = document.getElementById('search__icon');
 let searchWindow = document.getElementById('search');
 let searchWindowClosingBtn = document.getElementById('closing__search__button');
-console.log(searchWindowClosingBtn);
 
 (searchBtn ? searchBtn.addEventListener('click', ()=> searchWindow.classList.add('top0') ) : 1);
 (searchWindowClosingBtn ? searchWindowClosingBtn.addEventListener('click', ()=> searchWindow.classList.remove('top0') ) : 1);
@@ -436,15 +440,6 @@ if(orderBtn){
 }
 
 
-
-
-//show more pagination
-const showMoreBtn = document.getElementById('showMore');
-if(showMoreBtn){
-  showMoreBtn.addEventListener('click',function(){
-    showMoreBtn.dataset.page;
-  })
-}
 
 
 

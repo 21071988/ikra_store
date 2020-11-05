@@ -73,11 +73,46 @@
           отлично сочетается с плащами
           и туманным владивостоком
         </div>
+        <h3 class='other__colors'>Другие цвета</h3>
+        <div class="item__brother">
+          <a href="/catalog/item.php">
+            <img src="/images/catalog/1.jpg" alt="">
+            <span>Коричневый</span>
+          </a>
+          <a href="/catalog/item.php">
+            <img src="/images/catalog/2.jpg" alt="">
+            <span>зеленый</span>
+          </a>
+          <a href="/catalog/item.php">
+            <img src="/images/catalog/1.jpg" alt="">
+            <span>Коричневый</span>
+          </a>
+          <a href="/catalog/item.php">
+            <img src="/images/catalog/2.jpg" alt="">
+            <span>зеленый</span>
+          </a>
+          <a href="/catalog/item.php">
+            <img src="/images/catalog/1.jpg" alt="">
+            <span>Коричневый</span>
+          </a>
+          <a href="/catalog/item.php">
+            <img src="/images/catalog/2.jpg" alt="">
+            <span>зеленый</span>
+          </a>
+          <a href="/catalog/item.php">
+            <img src="/images/catalog/1.jpg" alt="">
+            <span>Коричневый</span>
+          </a>
+          <a href="/catalog/item.php">
+            <img src="/images/catalog/2.jpg" alt="">
+            <span>зеленый</span>
+          </a>
+        </div>
 
         <div class="item__helpfull__links">
-          <a href="">оплата</a>
-          <a href="">доставка</a>
-          <a href="">возврат</a>
+          <a href="/info">оплата</a>
+          <a href="/info">доставка</a>
+          <a href="/info">возврат</a>
         </div>
     </div>
   </div>

@@ -29,6 +29,9 @@ body{
 .f15{
 	font-size:1.5rem;
 }
+.fm{
+	font-size: 1.2rem;
+}
 .hc{
 	color:@hc;
 	.trans4;
@@ -295,6 +298,23 @@ footer{
 	padding:0 40px;
 	h1{
 
+	}
+}
+.other__colors{
+	margin-bottom: @m;
+}
+.item__brother{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-gap:@m;
+	margin-bottom:@m2;
+	a{
+		img{
+			width: 100%;
+		}
+		span{
+			font-size: revert;
+		}
 	}
 }
 .wrapper__catalog{
@@ -612,11 +632,13 @@ footer{
 	margin-bottom: @m2;
 }
 .item__helpfull__links{
-	.flex;
-	justify-content: space-between;
-	width: 80%;
+	a{
+		margin-right:@m2;
+		border-bottom:1px solid @bl;
+	}
 	.f;
 }
+
 
 .interesting__slider__full, .earlier__slider__full{
 	width: 80%;
@@ -1344,5 +1366,43 @@ label{
 }
 
 @media screen and(max-width: 768px) {
-	
+	.first__main__p__text{
+		width: calc(100% - @m2);
+		.fm;
+		margin-bottom: @m2;
+	}
+	.main__ikra__svg{
+		.w100;
+		margin-left:0;
+		margin-bottom:@m2;
+	}
+	footer{
+		.column;
+	}
+	.double__sliders{
+		.column;
+	}
+	.double__slider{
+		.w100;
+	}
+	.arml2, .armr2{
+		display: none;
+	}
+	.arml, .armr{
+		top:45%;
+	}
+	.arml{
+		left:10%;
+	}
+	.armr{
+		right:10%;
+	}
+	.button__bottom a{
+		font-size: 2.2rem;
+	}
+	.go__shopping__main{
+		margin:@m @m @m3 @m;
+	}.about__preview{
+		.column;
+	}
 }

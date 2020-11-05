@@ -129,7 +129,7 @@
       </div>
       </form>
   </div>
-
+  <div class="catalog__pages__full">
     <div class="catalog__pages">
       
       <a href="/catalog/item.php" class='c1'>
@@ -340,6 +340,8 @@
 
       
     </div>
+    
+  </div>
     <button data-page='2' id='showMore'>Показать еще</button>
   </div>
 </div>
