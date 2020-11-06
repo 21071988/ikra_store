@@ -413,6 +413,7 @@ let brotherColor = Array.from(brotherColorAr);
 
 const sizeChoosingDiv = document.getElementById('size__choosing');
 const picsDiv = document.getElementById('item__imgs');
+const itemNameDiv = document.getElementById('item__color');
 
 let colorSize = {
      red:{
@@ -429,15 +430,18 @@ if(brotherColor){
   for(let i=0; i< brotherColor.length; i++){
     brotherColor[i].addEventListener('click', function(){
       colorKey = brotherColor[i].dataset.color;
+
       sizeChoosingDiv.innerHTML="";
-      picsDiv.innerHTML="";    
+      picsDiv.innerHTML="";
+      itemNameDiv.innerHTML="";    
+
+      itemNameDiv.innerHTML= `${colorKey}`;
       for(let j=0; j< colorSize[colorKey].size.length; j++){
-        sizeChoosingDiv.innerHTML+=`<span>${colorSize[colorKey].size[j]}</span>`;      
+        sizeChoosingDiv.innerHTML+=`<span>${colorSize[colorKey].size[j]}</span>`;    
       }
       for(let s=0; s< colorSize[colorKey].img.length; s++){
         picsDiv.innerHTML+=`<a data-fancybox="gallery" href="/images/catalog/1.jpg"><img src="/images/catalog/${colorSize[colorKey].img[s]}.jpg"></a>`;      
       } 
-       console.log(colorSize[colorKey].size[6]);
     });
   }
 }

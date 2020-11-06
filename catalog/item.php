@@ -22,7 +22,7 @@
         
     </div>
     <div class="item__props">
-        <p class="item__name">
+        <p class="item__name" >
         панама фиолетовая
         </p>
         
@@ -59,7 +59,7 @@
 
         <div class="item__color">
           <span>Цвет:</span>
-          <span>Фиолетовый</span>
+          <span id='item__color'>Фиолетовый</span>
         </div>
 
         <div class="item__material">
