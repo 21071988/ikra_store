@@ -3,7 +3,15 @@ $(document).ready(function(){
         $('.most__popular__slider').slick({
             infinite: true,
             slidesToShow: 3,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            responsive: [
+              {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 1
+                }
+              } 
+            ]
         });
 
       $('.mprm').on('click', function() {
@@ -399,6 +407,42 @@ for(let i = 0; i< orderInputs.length; i++){
 
 
 window.onload = function(){
+// changing color of item
+let brotherColorAr = document.querySelectorAll('.color__trigger');
+let brotherColor = Array.from(brotherColorAr);
+
+const sizeChoosingDiv = document.getElementById('size__choosing');
+const picsDiv = document.getElementById('item__imgs');
+
+let colorSize = {
+     red:{
+      size : ['XS','S'],
+      img : ['1','2']
+     },
+     green:{
+      size : ['S','M'],
+      img : ['2','3']
+     },
+
+}
+if(brotherColor){
+  for(let i=0; i< brotherColor.length; i++){
+    brotherColor[i].addEventListener('click', function(){
+      colorKey = brotherColor[i].dataset.color;
+      sizeChoosingDiv.innerHTML="";
+      picsDiv.innerHTML="";    
+      for(let j=0; j< colorSize[colorKey].size.length; j++){
+        sizeChoosingDiv.innerHTML+=`<span>${colorSize[colorKey].size[j]}</span>`;      
+      }
+      for(let s=0; s< colorSize[colorKey].img.length; s++){
+        picsDiv.innerHTML+=`<a data-fancybox="gallery" href="/images/catalog/1.jpg"><img src="/images/catalog/${colorSize[colorKey].img[s]}.jpg"></a>`;      
+      } 
+       console.log(colorSize[colorKey].size[6]);
+    });
+  }
+}
+
+
 //search block appearance
 let searchBtn = document.getElementById('search__icon');
 let searchWindow = document.getElementById('search');

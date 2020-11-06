@@ -308,12 +308,15 @@ footer{
 	grid-template-columns: repeat(3,1fr);
 	grid-gap:@m;
 	margin-bottom:@m2;
+	img{
+		.w100;
+	}
 	a{
 		img{
 			width: 100%;
 		}
 		span{
-			font-size: revert;
+			font-size: 1rem;
 		}
 	}
 }
@@ -1364,6 +1367,9 @@ label{
 		font-size: 12px;
 	}
 }
+.show__more__main__2{
+	display: none;
+}
 
 @media screen and(max-width: 768px) {
 	.first__main__p__text{
@@ -1401,8 +1407,52 @@ label{
 		font-size: 2.2rem;
 	}
 	.go__shopping__main{
-		margin:@m @m @m3 @m;
+		margin:@m2 @m;
 	}.about__preview{
 		.column;
+	}
+	.show__more__main{
+		margin:@m2 @m 0;
+		.some{
+			a{
+				font-size: 1.7rem;
+			}
+		}
+	}
+	.about__preview .about__preview__text p{
+		width: calc(100% - @m2);
+		.fm;
+	}
+	.most__popular{
+		width: 100%;
+	}
+	.most__popular__slider__full{
+		width: 94%;
+		margin:0 auto;
+	}
+	.most__popular__slider__full svg{
+		width: 10px;
+	}
+	.most__popular__slider__full svg:first-child{
+		left:-8px;
+	}
+	.most__popular__slider__full svg:last-child{
+		right:-8px;
+	}
+	.most__popular__slider .catalog__item{
+		margin:0 5px;
+	}
+	.show__more__main__1{
+		display: none;
+	}
+	.show__more__main__2{
+		display: block;
+	}
+	.about__preview .about__preview__text img{
+		margin-top:@m2;
+	}
+	.most__popular p:first-child{
+		font-size: 1.5rem;
+		margin-bottom: 5px;
 	}
 }

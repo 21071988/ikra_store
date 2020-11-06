@@ -52,13 +52,17 @@
           отечественным  дизайнерам.
           в том числе из Владивостока.... 
           </p>
-          <div class='button__bottom show__more__main'>
-          <div class='some'><a href='/about'>узнать больше о ikra</a></div>
+          <div class='button__bottom show__more__main show__more__main__1'>
+            <div class='some'><a href='/about'>узнать больше о ikra</a></div>
             <div class="bottom__line"></div>
           </div>
       </div>
       <div class='about__preview__text'>
         <img src="/images/main/4.jpg" alt=""> 
+        <div class='button__bottom show__more__main show__more__main__2'>
+            <div class='some'><a href='/about'>узнать больше о ikra</a></div>
+            <div class="bottom__line"></div>
+          </div>
       </div>
       
     </div>

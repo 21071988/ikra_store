@@ -9,7 +9,7 @@
 
 </div>
   <div class="item">
-    <div class="item__imgs">
+    <div class="item__imgs" id='item__imgs'>
     <a data-fancybox="gallery" href="/images/catalog/1.jpg"><img src="/images/catalog/1.jpg"></a>
     <a data-fancybox="gallery" href="/images/catalog/2.jpg"><img src="/images/catalog/2.jpg"></a>
     <a data-fancybox="gallery" href="/images/catalog/3.jpg"><img src="/images/catalog/3.jpg"></a>
@@ -34,7 +34,7 @@
         <div class="item__sizes">
           <form action="index.php" method='GET'>
             
-              <div class="size__choosing">
+              <div class="size__choosing" id='size__choosing'>
                 <label class='size__choosing__label active' for="xs"><input type="radio" id="xs" name='size' value='xs' checked> xs</label>
                 
                 <label class='size__choosing__label' for="s"><input type="radio" id="s" name='size' value='s'> s</label>
@@ -75,38 +75,18 @@
         </div>
         <h3 class='other__colors'>Другие цвета</h3>
         <div class="item__brother">
-          <a href="/catalog/item.php">
+          <div  class='color__trigger' data-color='red'>
+          
             <img src="/images/catalog/1.jpg" alt="">
-            <span>Коричневый</span>
-          </a>
-          <a href="/catalog/item.php">
+            <span class='color__trigger'>Коричневый</span>
+     
+          </div>
+          <div  class='color__trigger' data-color='green'>
+          
             <img src="/images/catalog/2.jpg" alt="">
-            <span>зеленый</span>
-          </a>
-          <a href="/catalog/item.php">
-            <img src="/images/catalog/1.jpg" alt="">
-            <span>Коричневый</span>
-          </a>
-          <a href="/catalog/item.php">
-            <img src="/images/catalog/2.jpg" alt="">
-            <span>зеленый</span>
-          </a>
-          <a href="/catalog/item.php">
-            <img src="/images/catalog/1.jpg" alt="">
-            <span>Коричневый</span>
-          </a>
-          <a href="/catalog/item.php">
-            <img src="/images/catalog/2.jpg" alt="">
-            <span>зеленый</span>
-          </a>
-          <a href="/catalog/item.php">
-            <img src="/images/catalog/1.jpg" alt="">
-            <span>Коричневый</span>
-          </a>
-          <a href="/catalog/item.php">
-            <img src="/images/catalog/2.jpg" alt="">
-            <span>зеленый</span>
-          </a>
+            <span'>зеленый</span>
+        
+          </div>
         </div>
 
         <div class="item__helpfull__links">
