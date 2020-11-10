@@ -1,5 +1,5 @@
 <footer>
-  <div class="footer__div">
+  <div class="footer__div footer__div__one">
     <div>
         <div>
           <span>Подписаться на рассылку</span>

@@ -14,6 +14,48 @@
 </head>
 <body>
 <header>
+<div id="mobile__menu">
+<div id="burger">
+      <hr id='left__closing'>
+      <hr id='right__closing'>
+    </div> 
+  <div class="header__menu__mobile">
+     
+      <!-- <div id="myBtn">GO!</div> -->
+      <ul>
+      <li>
+          <a href="/catalog/">
+            главная
+          </a>
+        </li>
+        <li>
+          <a href="/catalog/">
+            каталог
+          </a>
+        </li>
+        <li>
+          <a href="/info/">
+            оплата и доставка
+          </a>
+        </li>
+        <li>
+          <a href="/brands">
+            бренды
+          </a>
+        </li>
+        <li>
+          <a href="/about/">
+            о нас	
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="mobile__logo">
+      <a href="/index.php">
+        <img src="/images/svg/logo.svg" alt="" id='mobile__logo'>
+      </a>
+    </div>
+</div>
 <div id="search">
     <div id='closing__search__button'>
       <hr>
@@ -23,6 +65,12 @@
       <input type="text">
       <button>искать</button>
     </form>
+  </div>
+
+  <div id="menu__burger">
+    <hr>
+    <hr>
+    <hr>
   </div>
 
   <div class='logo__div'>

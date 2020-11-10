@@ -29,7 +29,17 @@
         <span class='item__art'>артикул 123871</span>
 
         <span class="item__price">5&nbsp;500Р</span>
-
+        <div class="item__mobile__slider" id='item__imgs'>
+          <a data-fancybox="gallery" href="/images/catalog/1.jpg"><img src="/images/catalog/1.jpg"></a>
+          <a data-fancybox="gallery" href="/images/catalog/2.jpg"><img src="/images/catalog/2.jpg"></a>
+          <a data-fancybox="gallery" href="/images/catalog/3.jpg"><img src="/images/catalog/3.jpg"></a>
+          <a data-fancybox="gallery" href="/images/catalog/1.jpg"><img src="/images/catalog/1.jpg"></a>
+          <a data-fancybox="gallery" href="/images/catalog/2.jpg"><img src="/images/catalog/2.jpg"></a>
+          <a data-fancybox="gallery" href="/images/catalog/3.jpg"><img src="/images/catalog/3.jpg"></a>
+          <a data-fancybox="gallery" href="/images/catalog/1.jpg"><img src="/images/catalog/1.jpg"></a>
+          <a data-fancybox="gallery" href="/images/catalog/2.jpg"><img src="/images/catalog/2.jpg"></a>
+          <a data-fancybox="gallery" href="/images/catalog/3.jpg"><img src="/images/catalog/3.jpg"></a>
+        </div>
         <a href="" class='choose__size__link'>Выбрать размер:</a>
         <div class="item__sizes">
           <form action="index.php" method='GET'>

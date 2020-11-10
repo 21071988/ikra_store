@@ -123,6 +123,9 @@
           <label class='top__menu__choose__color possibly__active' for="braslet"><input type="checkbox" id="braslet" name='size' value='braslet' checked> braslet</label>
           <label class='top__menu__choose__color possibly__active' for="earings"><input type="checkbox" id="earings" name='size' value='earings' checked> earings</label>  
         </div>
+        <div class="new__btn">
+           <button type='submit' id='show__items__button__mobile'>Показать</button>
+        </div>
 
         
       

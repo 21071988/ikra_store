@@ -26,7 +26,16 @@ $(document).ready(function(){
         $('.interesting__slider').slick({
             infinite: true,
             slidesToShow: 4,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+          
+            responsive: [
+              {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 2
+                }
+              } 
+            ]
         }); 
     
       $('.mpri').on('click', function() {
@@ -42,7 +51,16 @@ $(document).ready(function(){
         $('.earlier__slider').slick({
             infinite: true,
             slidesToShow: 4,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            
+            responsive: [
+              {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 2
+                }
+              } 
+            ]
         });
 
     
@@ -133,7 +151,13 @@ $(document).ready(function(){
             // $('.catalog__pages').append('#showMore');         
           })
         });
-
+          //item card mobile slider
+          $('.item__mobile__slider').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            fade:true
+        });
 
       });
 
@@ -185,16 +209,17 @@ for(let i = 0; i< labelArray.length; i++){
         this.className += " active";
     });
 }
-
 //choosing size in catalog
 let labelC = document.querySelectorAll('.possibly__active');
 let catalogShowBtn = document.getElementById('show__items__button');
+let catalogShownBtnMobile = document.getElementById('show__items__button__mobile');
 labelCArray = Array.from(labelC);
 for(let i = 0; i< labelCArray.length; i++){
   labelCArray[i].addEventListener('click',function(){
         var currentС = document.getElementsByClassName("active");
         this.className += " active";
         catalogShowBtn.style.opacity = '1';
+        (window.innerWidth < 768 ? catalogShownBtnMobile.style.opacity = '1': 1);
 
 
     });
@@ -400,13 +425,45 @@ for(let i = 0; i< orderInputs.length; i++){
 
 
 
-
-
-
-
-
-
 window.onload = function(){
+let myBtn = document.getElementById('menu__burger');
+let mobileLogo = document.getElementById('mobile__logo');
+let leftHr = document.getElementById('left__closing');
+let rightHr = document.getElementById('right__closing');
+let closingDiv = document.getElementById('burger');
+
+myBtn.addEventListener('click', ()=>{
+  setTimeout(()=>{
+    mobileLogo.classList.add('show__mobile__logo')
+    leftHr.classList.add('closing__animation__left')
+    rightHr.classList.add('closing__animation__right')
+    closingDiv.classList.add('rotate__closing__button')
+  },500);
+});
+closingDiv.addEventListener('click',()=>{
+
+})
+  // mobile menu showing
+
+let menuBtn = document.getElementById('menu__burger');
+let mobileMenu = document.getElementById('mobile__menu');
+let b = document.querySelector('body');
+
+menuBtn.addEventListener('click', ()=>{
+   mobileMenu.classList.add('show__menu')
+   b.classList.add('hide__overflow')
+  }
+);
+
+closingDiv.addEventListener('click', ()=>{
+  mobileMenu.classList.add('hide__menu');
+  b.classList.remove('hide__overflow')
+  setTimeout(()=>
+    mobileMenu.classList.remove('show__menu')
+  ,700)
+});
+
+
 // changing color of item
 let brotherColorAr = document.querySelectorAll('.color__trigger');
 let brotherColor = Array.from(brotherColorAr);
