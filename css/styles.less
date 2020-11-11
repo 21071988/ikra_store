@@ -192,7 +192,7 @@ header{
 	top:-1000px;
 	left:0;
 	width: 100%;
-	height: 100vh;
+	height: 102vh;
 	background:#ffffff;
 	z-index:200;
 	transition:.7s;
@@ -1764,5 +1764,62 @@ label{
 	}
 	.item__props{
 		.fm;
+	}
+	.lk{
+		padding:0 20px;
+	}
+	.lk h1{
+		margin-left:@m;
+		font-size: 10vw;
+	}
+	.personal__data form{
+		margin-left:@m;
+		width: 85%;
+	}
+	#submit__lk__form{
+		margin-top: 70px;
+    margin-left: -100%;
+    font-size: 7vw;
+	}
+	.offers{
+		margin-left:@m;
+		width: 90%;
+		margin-bottom: @m2;
+	}
+	.u__liked__full h2{
+		.fm;
+		margin-left:0;
+	}
+	.orders__history__full h2{
+		.fm;
+		margin:@m2 0 0 0;
+	}
+	.liked svg{
+		margin-bottom:4px;
+		width: 17px;
+	}
+	@keyframes bheartmobile{
+		0%{
+			width: 17px;
+		}
+		50%{
+			width: 19px;
+		}
+		100%{
+			width: 17px;
+		}
+	}
+	.beating__heart{
+		animation:bheartmobile .5s forwards;
+	}
+	#search form{
+		width: 90%;
+		.column;
+		align-items: flex-start;
+		margin-left:10%;
+		button{
+			margin-top:10px;
+		}
+		
 	}
 }
