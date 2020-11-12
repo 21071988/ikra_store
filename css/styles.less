@@ -1389,10 +1389,45 @@ label{
 		.fm;
 		margin-bottom: @m2;
 	}
+	.checking__order{
+		width: 94%;
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+		grid-gap:@m 0;
+		.catalog__item p{
+			font-size: 14px;
+		}
+		.old__price{
+			font-size: 12px;
+			margin-right: 5px;
+		}
+		span{
+			font-size: 16px;
+		}
+	}
+	
+	.checking__order .catalog__item{
+		margin:0 5px;
+	}
+	.order__data, .delivery__type, .payment__type{
+		width: 90%;
+	}
+	#lk__phone{
+		width: 35% !important;
+	}
+	.payment__type h2{
+		margin-left:5px;
+	}
+	.checking__order__block h2{
+		margin-left:20px;
+	}
 	.main__ikra__svg{
 		width: 80%;
 		margin-left:@m;
 		margin-bottom:@m2;
+	}
+	.oal, .oar{
+		display: none;
 	}
 	footer{
 		.column;
@@ -1511,8 +1546,23 @@ label{
 	width: 6px;
 	margin-left:10px;
 }
+
 .menu__mobile__li{
 	.flex;
+}
+.promocode{
+	margin-top:@m;
+	.w100;
+	form{
+		.column;
+		align-items: flex-start;
+	}
+	button{
+		margin-left: 0 !important;
+		margin-top:@m;
+		font-size: 1.4rem !important;
+
+	}
 }
 	#mobile__catalog__menu, #mobile__catalog__brands{
 		position: absolute;
@@ -1738,7 +1788,14 @@ label{
 		}
 	}
 	.catalog__pages{
-		grid-template-columns: repeat(1, 1fr);
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap:20px 10px;
+	}
+	.wrapper__basket{
+		padding:10px;
+		.button__bottom{
+			margin-top:@m;
+		}
 	}
 	#show__items__button{
 		margin-left:0;

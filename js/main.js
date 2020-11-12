@@ -119,7 +119,13 @@ $(document).ready(function(){
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
-        arrows:false
+        arrows:false,
+        responsive:[
+          {
+            breakpoint: 768,
+            settings: "unslick"
+          } 
+        ]
       });
 
 
