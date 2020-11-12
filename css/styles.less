@@ -1498,6 +1498,19 @@ label{
 			margin: 5px;
 		}
 	}
+	.hide__mobile__catalog__menu{
+		height: 0;
+	}
+	#mobile__catalog__menu{
+		margin-top:10px;
+		margin-left:15px;
+		overflow: hidden;
+		.trans4;
+		a{
+			margin-bottom:10px;
+		}
+		.column;
+	}
 	#mobile__menu{
 		.column;
 		justify-content: space-between;
@@ -1506,7 +1519,8 @@ label{
 		left: -500px;
 		top: 0;
 		background: #ffffff;
-		height: calc(100vh - @m * 2);
+		// min-height: calc(100vh - @m * 2);
+		// height:auto;
 		overflow: hidden;
 		padding:@m;
 		transition:.7s;
@@ -1533,6 +1547,9 @@ label{
 				}
 			}
 		}
+}
+.menu__mobile__li{
+	margin-bottom: 0 !important;
 }
 #burger{
 	position: absolute;

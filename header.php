@@ -28,10 +28,28 @@
             главная
           </a>
         </li>
-        <li>
-          <a href="/catalog/">
+        <li class='menu__mobile__li'>
+          <span href="/catalog/" id='mobile__catalog__hide__btn'>
             каталог
-          </a>
+          </span>
+          <div id='mobile__catalog__menu'>
+          <a href="">Платья</a>
+          <a href="">топ</a>
+          <a href="">юбки</a>
+          <a href="">джинсы</a>
+          <a href="">брюки</a>
+          <a href="">аксессуары</a>
+          <a href="">обувь</a>
+          <a href="">пальто</a>
+          <a href="">верхняя одежда</a>
+          <a href="">аксессуары</a>
+          <a href="">юбки</a>
+          <a href="">джинсы</a>
+          <a href="">брюки</a>
+          <a href="">аксессуары</a>
+          <a href="">обувь</a>
+          <a href="">пальто</a>
+          </div>
         </li>
         <li>
           <a href="/info/">

@@ -426,6 +426,15 @@ for(let i = 0; i< orderInputs.length; i++){
 
 
 window.onload = function(){
+//hiding mobile catalog menu
+let hideMenuBtn = document.getElementById('mobile__catalog__hide__btn');
+let menuMobileCatalog = document.getElementById('mobile__catalog__menu')
+
+hideMenuBtn.addEventListener('click',()=>
+(menuMobileCatalog.classList.contains('hide__mobile__catalog__menu') ? menuMobileCatalog.classList.remove('hide__mobile__catalog__menu') : menuMobileCatalog.classList.add('hide__mobile__catalog__menu'))
+)
+
+
 let myBtn = document.getElementById('menu__burger');
 let mobileLogo = document.getElementById('mobile__logo');
 let leftHr = document.getElementById('left__closing');
