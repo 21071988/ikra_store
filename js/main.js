@@ -430,11 +430,29 @@ window.onload = function(){
 let hideMenuBtn = document.getElementById('mobile__catalog__hide__btn');
 let menuMobileCatalog = document.getElementById('mobile__catalog__menu')
 
+let hideMenuBtnBrands = document.getElementById('mobile__catalog__brands__btn');
+let menuMobileBrands = document.getElementById('mobile__catalog__brands');
+let backBtn = document.getElementById('back__btn');
+let backBrandsBtn = document.getElementById('back__brands__btn');
+
 hideMenuBtn.addEventListener('click',()=>
 (menuMobileCatalog.classList.contains('hide__mobile__catalog__menu') ? menuMobileCatalog.classList.remove('hide__mobile__catalog__menu') : menuMobileCatalog.classList.add('hide__mobile__catalog__menu'))
 )
 
+hideMenuBtnBrands.addEventListener('click',()=>
+(menuMobileBrands.classList.contains('hide__mobile__catalog__menu') ? menuMobileBrands.classList.remove('hide__mobile__catalog__menu') : menuMobileBrands.classList.add('hide__mobile__catalog__menu'))
+)
 
+backBtn.addEventListener('click',()=>
+(menuMobileCatalog.classList.contains('hide__mobile__catalog__menu') ? menuMobileCatalog.classList.remove('hide__mobile__catalog__menu') : menuMobileCatalog.classList.add('hide__mobile__catalog__menu'))
+)
+
+backBrandsBtn.addEventListener('click',()=>
+(menuMobileBrands.classList.contains('hide__mobile__catalog__menu') ? menuMobileBrands.classList.remove('hide__mobile__catalog__menu') : menuMobileBrands.classList.add('hide__mobile__catalog__menu'))
+)
+
+
+//mobile menu animation
 let myBtn = document.getElementById('menu__burger');
 let mobileLogo = document.getElementById('mobile__logo');
 let leftHr = document.getElementById('left__closing');
@@ -457,10 +475,13 @@ closingDiv.addEventListener('click',()=>{
 let menuBtn = document.getElementById('menu__burger');
 let mobileMenu = document.getElementById('mobile__menu');
 let b = document.querySelector('body');
+let mobileMenuHeight = window.innerHeight;
+  
 
 menuBtn.addEventListener('click', ()=>{
    mobileMenu.classList.add('show__menu')
    b.classList.add('hide__overflow')
+   mobileMenu.style.minHeight = `${mobileMenuHeight}px`;
   }
 );
 

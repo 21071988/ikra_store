@@ -15,24 +15,12 @@
 <body>
 <header>
 <div id="mobile__menu">
-<div id="burger">
-      <hr id='left__closing'>
-      <hr id='right__closing'>
-    </div> 
-  <div class="header__menu__mobile">
-     
-      <!-- <div id="myBtn">GO!</div> -->
-      <ul>
-      <li>
-          <a href="/catalog/">
-            главная
-          </a>
-        </li>
-        <li class='menu__mobile__li'>
-          <span href="/catalog/" id='mobile__catalog__hide__btn'>
-            каталог
-          </span>
-          <div id='mobile__catalog__menu'>
+<div id='mobile__catalog__menu'>
+          <div id='back__btn'>
+          <svg class='back__arrow' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.09 49.41"><defs><style>.cls-1{fill:none;stroke:#13100d;stroke-miterlimit:10;stroke-width:3px;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><polyline class="cls-1" points="0.95 1.16 30.67 25.45 0.95 48.22"/></g></g></svg>
+           <span>Назад</span>
+          </div>
+          <a href="">Всё вместе</a>
           <a href="">Платья</a>
           <a href="">топ</a>
           <a href="">юбки</a>
@@ -49,18 +37,81 @@
           <a href="">аксессуары</a>
           <a href="">обувь</a>
           <a href="">пальто</a>
-          </div>
+    </div>
+
+    <div id='mobile__catalog__brands'>
+      <div id='back__brands__btn'>
+      <svg class='back__arrow' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.09 49.41"><defs><style>.cls-1{fill:none;stroke:#13100d;stroke-miterlimit:10;stroke-width:3px;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><polyline class="cls-1" points="0.95 1.16 30.67 25.45 0.95 48.22"/></g></g></svg>
+        <span>Назад</span>
+      </div>
+            <a href="">Платья</a>
+            <a href="">топ</a>
+            <a href="">юбки</a>
+            <a href="">джинсы</a>
+            <a href="">брюки</a>
+            <a href="">аксессуары</a>
+            <a href="">обувь</a>
+            <a href="">пальто</a>
+            <a href="">верхняя одежда</a>
+            <a href="">аксессуары</a>
+            <a href="">юбки</a>
+            <a href="">джинсы</a>
+            <a href="">брюки</a>
+            <a href="">аксессуары</a>
+            <a href="">обувь</a>
+            <a href="">пальто</a>
+            <a href="">Платья</a>
+            <a href="">топ</a>
+            <a href="">юбки</a>
+            <a href="">джинсы</a>
+            <a href="">брюки</a>
+            <a href="">аксессуары</a>
+            <a href="">обувь</a>
+            <a href="">пальто</a>
+            <a href="">верхняя одежда</a>
+            <a href="">аксессуары</a>
+            <a href="">юбки</a>
+            <a href="">джинсы</a>
+            <a href="">брюки</a>
+            <a href="">аксессуары</a>
+            <a href="">обувь</a>
+            <a href="">пальто</a>
+      </div>
+<div id="burger">
+      <hr id='left__closing'>
+      <hr id='right__closing'>
+    </div> 
+  <div class="header__menu__mobile">
+     
+   
+
+      <!-- <div id="myBtn">GO!</div> -->
+      <ul>
+      <li>
+          <a href="/catalog/">
+            главная
+          </a>
+        </li>
+        <li class='menu__mobile__li'>
+       
+          <span id='mobile__catalog__hide__btn'>
+            каталог
+          </span>
+          <svg class='forward__arrow' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.09 49.41"><defs><style>.cls-1{fill:none;stroke:#13100d;stroke-miterlimit:10;stroke-width:3px;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><polyline class="cls-1" points="0.95 1.16 30.67 25.45 0.95 48.22"/></g></g></svg>   
+        </li>
+        <li class='menu__mobile__li'>
+        
+          <span id='mobile__catalog__brands__btn'>
+            бренды
+          </span>
+          <svg class='forward__arrow' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.09 49.41"><defs><style>.cls-1{fill:none;stroke:#13100d;stroke-miterlimit:10;stroke-width:3px;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><polyline class="cls-1" points="0.95 1.16 30.67 25.45 0.95 48.22"/></g></g></svg>    
         </li>
         <li>
           <a href="/info/">
             оплата и доставка
           </a>
         </li>
-        <li>
-          <a href="/brands">
-            бренды
-          </a>
-        </li>
+        
         <li>
           <a href="/about/">
             о нас	
