@@ -431,6 +431,18 @@ for(let i = 0; i< orderInputs.length; i++){
 
 
 window.onload = function(){
+// hearts
+
+littleHeartAr = document.querySelectorAll('.cls-heart');
+littleHeart = Array.from(littleHeartAr)
+for(let i=0;i<littleHeart.length;i++){
+  littleHeart[i].addEventListener('click',(e)=>{
+   littleHeart[i].style.fill = 'black';
+   littleHeart[i].nextSibling.nextSibling.classList.add('beating__heart__c');
+    e.preventDefault();
+  });
+  }
+
 //hiding mobile catalog menu
 let hideMenuBtn = document.getElementById('mobile__catalog__hide__btn');
 let menuMobileCatalog = document.getElementById('mobile__catalog__menu');
@@ -618,7 +630,7 @@ if(sbmBtn){
            return false;
         }else{
           console.log('yeeee');
-          
+
           }
 });
 }
