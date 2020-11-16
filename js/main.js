@@ -321,7 +321,6 @@ tabsArray = Array.from(tabs);
 textsArray = Array.from(texts);
 for(let i = 0; i< tabsArray.length; i++){
   let textsHeight = textsArray[3].clientHeight;
-  console.log(textsHeight);
   textsDiv[0].style.height = textsHeight +'px';
   tabsArray[i].addEventListener('click',function(){
       var current = document.getElementsByClassName("active");
@@ -434,28 +433,43 @@ for(let i = 0; i< orderInputs.length; i++){
 window.onload = function(){
 //hiding mobile catalog menu
 let hideMenuBtn = document.getElementById('mobile__catalog__hide__btn');
-let menuMobileCatalog = document.getElementById('mobile__catalog__menu')
+let menuMobileCatalog = document.getElementById('mobile__catalog__menu');
+
+let fA = document.querySelectorAll('.cls-ma');
+let faAr = Array.from(fA);
 
 let hideMenuBtnBrands = document.getElementById('mobile__catalog__brands__btn');
 let menuMobileBrands = document.getElementById('mobile__catalog__brands');
 let backBtn = document.getElementById('back__btn');
 let backBrandsBtn = document.getElementById('back__brands__btn');
 
-hideMenuBtn.addEventListener('click',()=>
-(menuMobileCatalog.classList.contains('hide__mobile__catalog__menu') ? menuMobileCatalog.classList.remove('hide__mobile__catalog__menu') : menuMobileCatalog.classList.add('hide__mobile__catalog__menu'))
-)
+hideMenuBtn.addEventListener('click',()=>{
+  faAr[0].classList.add('move__mobile__arrow')
+  faAr[1].classList.add('move__mobile__arrow')
+  setTimeout(()=>faAr[1].nextSibling.classList.add('move__mobile__arrow'),150)
+  setTimeout(()=>(menuMobileCatalog.classList.contains('hide__mobile__catalog__menu') ? menuMobileCatalog.classList.remove('hide__mobile__catalog__menu') : menuMobileCatalog.classList.add('hide__mobile__catalog__menu')),700)  
+})
 
-hideMenuBtnBrands.addEventListener('click',()=>
-(menuMobileBrands.classList.contains('hide__mobile__catalog__menu') ? menuMobileBrands.classList.remove('hide__mobile__catalog__menu') : menuMobileBrands.classList.add('hide__mobile__catalog__menu'))
-)
+hideMenuBtnBrands.addEventListener('click',()=>{
+faAr[2].classList.add('move__mobile__arrow')
+faAr[3].classList.add('move__mobile__arrow')
+setTimeout(()=>faAr[3].nextSibling.classList.add('move__mobile__arrow'),150)
+setTimeout(()=>(menuMobileBrands.classList.contains('hide__mobile__catalog__menu') ? menuMobileBrands.classList.remove('hide__mobile__catalog__menu') : menuMobileBrands.classList.add('hide__mobile__catalog__menu')),700)
+})
 
-backBtn.addEventListener('click',()=>
-(menuMobileCatalog.classList.contains('hide__mobile__catalog__menu') ? menuMobileCatalog.classList.remove('hide__mobile__catalog__menu') : menuMobileCatalog.classList.add('hide__mobile__catalog__menu'))
-)
+backBtn.addEventListener('click',()=>{
+  faAr[0].classList.remove('move__mobile__arrow')
+  faAr[1].classList.remove('move__mobile__arrow')
+  faAr[1].nextSibling.classList.remove('move__mobile__arrow');
+  (menuMobileCatalog.classList.contains('hide__mobile__catalog__menu') ? menuMobileCatalog.classList.remove('hide__mobile__catalog__menu') : menuMobileCatalog.classList.add('hide__mobile__catalog__menu'))
+})
 
-backBrandsBtn.addEventListener('click',()=>
-(menuMobileBrands.classList.contains('hide__mobile__catalog__menu') ? menuMobileBrands.classList.remove('hide__mobile__catalog__menu') : menuMobileBrands.classList.add('hide__mobile__catalog__menu'))
-)
+backBrandsBtn.addEventListener('click',()=>{
+  faAr[2].classList.remove('move__mobile__arrow')
+  faAr[3].classList.remove('move__mobile__arrow')
+  faAr[3].nextSibling.classList.remove('move__mobile__arrow')
+  (menuMobileBrands.classList.contains('hide__mobile__catalog__menu') ? menuMobileBrands.classList.remove('hide__mobile__catalog__menu') : menuMobileBrands.classList.add('hide__mobile__catalog__menu'))
+})
 
 
 //mobile menu animation
@@ -493,10 +507,16 @@ menuBtn.addEventListener('click', ()=>{
 
 closingDiv.addEventListener('click', ()=>{
   mobileMenu.classList.add('hide__menu');
-  b.classList.remove('hide__overflow')
-  setTimeout(()=>
-    mobileMenu.classList.remove('show__menu')
-  ,700)
+  b.classList.remove('hide__overflow');
+  (faAr[0].classList.contains('move__mobile__arrow') ? faAr[0].classList.remove('move__mobile__arrow') : 1);
+  (faAr[1].classList.contains('move__mobile__arrow') ? faAr[1].classList.remove('move__mobile__arrow') : 1);
+  (faAr[1].nextSibling.classList.contains('move__mobile__arrow') ? faAr[1].nextSibling.classList.remove('move__mobile__arrow') : 1);
+  (faAr[2].classList.contains('move__mobile__arrow') ? faAr[2].classList.remove('move__mobile__arrow') : 1);
+  (faAr[3].classList.contains('move__mobile__arrow') ? faAr[3].classList.remove('move__mobile__arrow') : 1);
+  (faAr[3].nextSibling.classList.contains('move__mobile__arrow') ? faAr[3].nextSibling.classList.remove('move__mobile__arrow') : 1);
+  setTimeout(()=>(menuMobileCatalog.classList.contains('hide__mobile__catalog__menu') ? menuMobileCatalog.classList.remove('hide__mobile__catalog__menu') : 1),800);
+  setTimeout(()=>(menuMobileBrands.classList.contains('hide__mobile__catalog__menu') ? menuMobileBrands.classList.remove('hide__mobile__catalog__menu') : 1),800);
+  setTimeout(()=>mobileMenu.classList.remove('show__menu'),400)
 });
 
 
@@ -565,14 +585,13 @@ if(orderBtn){
         
         orderInputsReq[i].style.borderBottom = '1px solid #EA2C32';
         errorSign[i].style.opacity = '1';
-        console.log(orderInputsReq[0].offsetTop + 100);
         window.scrollTo(0, orderInputsReq[0].offsetTop-80);
       }
       orderInputsReq[i].onblur = function(){
         if(orderInputsReq[i].value){
           orderInputsReq[i].style.borderBottom = '1px solid #13100D';
           orderInputsReq[i].style.display = 'none';
-          console.log('done');
+          
         }
       }
     }
@@ -599,6 +618,7 @@ if(sbmBtn){
            return false;
         }else{
           console.log('yeeee');
+          
           }
 });
 }

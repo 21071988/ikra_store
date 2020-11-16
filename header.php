@@ -17,7 +17,7 @@
 <div id="mobile__menu">
 <div id='mobile__catalog__menu'>
           <div id='back__btn'>
-          <svg class='back__arrow' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.09 49.41"><defs><style>.cls-1{fill:none;stroke:#13100d;stroke-miterlimit:10;stroke-width:3px;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><polyline class="cls-1" points="0.95 1.16 30.67 25.45 0.95 48.22"/></g></g></svg>
+          <svg class='back__arrow' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.09 49.41"><defs><style>.cls-1{fill:none;stroke:#13100d;stroke-miterlimit:10;stroke-width:6px;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><polyline class="cls-1" points="0.95 1.16 30.67 25.45 0.95 48.22"/></g></g></svg>
            <span>Назад</span>
           </div>
           <a href="">Всё вместе</a>
@@ -41,7 +41,7 @@
 
     <div id='mobile__catalog__brands'>
       <div id='back__brands__btn'>
-      <svg class='back__arrow' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.09 49.41"><defs><style>.cls-1{fill:none;stroke:#13100d;stroke-miterlimit:10;stroke-width:3px;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><polyline class="cls-1" points="0.95 1.16 30.67 25.45 0.95 48.22"/></g></g></svg>
+      <svg class='back__arrow' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.09 49.41"><defs><style>.cls-1{fill:none;stroke:#13100d;stroke-miterlimit:10;stroke-width:6px;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><polyline class="cls-1" points="0.95 1.16 30.67 25.45 0.95 48.22"/></g></g></svg>
         <span>Назад</span>
       </div>
             <a href="">Платья</a>
@@ -92,19 +92,19 @@
             главная
           </a>
         </li>
-        <li class='menu__mobile__li'>
+        <li class='menu__mobile__li' id='mobile__catalog__hide__btn'>
        
-          <span id='mobile__catalog__hide__btn'>
+          <span >
             каталог
           </span>
-          <svg class='forward__arrow' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.09 49.41"><defs><style>.cls-1{fill:none;stroke:#13100d;stroke-miterlimit:10;stroke-width:3px;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><polyline class="cls-1" points="0.95 1.16 30.67 25.45 0.95 48.22"/></g></g></svg>   
+          <svg class='forward__arrow forward__arrow__first'  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5.98 4.79"><defs><style>.cls-ma{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:5px;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><polyline class="cls-ma" points="3.92 0.15 5.66 2.46 3.92 4.63"/><line class="cls-ma" x1="5.66" y1="2.46" x2="2.83" y2="2.46"/><circle cx="0.58" cy="2.51" r="0.58"/></g></g></svg>
         </li>
-        <li class='menu__mobile__li'>
+        <li class='menu__mobile__li' id='mobile__catalog__brands__btn'>
         
-          <span id='mobile__catalog__brands__btn'>
+          <span >
             бренды
           </span>
-          <svg class='forward__arrow' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.09 49.41"><defs><style>.cls-1{fill:none;stroke:#13100d;stroke-miterlimit:10;stroke-width:3px;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><polyline class="cls-1" points="0.95 1.16 30.67 25.45 0.95 48.22"/></g></g></svg>    
+          <svg class='forward__arrow forward__arrow__second' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5.98 4.79"><defs><style>.cls-ma{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:0.5px;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><polyline class="cls-ma" points="3.92 0.15 5.66 2.46 3.92 4.63"/><line class="cls-ma" x1="5.66" y1="2.46" x2="2.83" y2="2.46"/><circle cx="0.58" cy="2.51" r="0.58"/></g></g></svg>   
         </li>
         <li>
           <a href="/info/">
@@ -121,7 +121,7 @@
     </div>
     <div class="mobile__logo">
       <a href="/index.php">
-        <img src="/images/svg/logo.svg" alt="" id='mobile__logo'>
+            <img src="/images/svg/logo.svg" alt="" id='mobile__logo'>
       </a>
     </div>
 </div>

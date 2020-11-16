@@ -1543,12 +1543,30 @@ label{
 	}
 }
 .forward__arrow{
-	width: 6px;
+	width: 15px;
+	height: 13px;
 	margin-left:10px;
+	overflow: visible;
+	.trans4;
+}
+.move__mobile__arrow{
+	animation: movemobilearrow 1s forwards ease-in-out;
+}
+@keyframes movemobilearrow {
+	100%{
+		transform: translateX(150px);
+		opacity: 0;
+	}
 }
 
 .menu__mobile__li{
 	.flex;
+	align-items: stretch;
+	justify-content: space-between;
+	width: 55%;
+	span{
+		line-height: 95%;
+	}
 }
 .promocode{
 	margin-top:@m;
