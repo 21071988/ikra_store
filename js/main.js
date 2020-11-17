@@ -8,7 +8,8 @@ $(document).ready(function(){
               {
                 breakpoint: 768,
                 settings: {
-                  slidesToShow: 1
+                  slidesToShow: 2,
+                  rows:2
                 }
               } 
             ]
@@ -105,6 +106,7 @@ $(document).ready(function(){
             responsive:[
               {
                 breakpoint: 768,
+                slidesToShow: 2,
                 rows:1
               } 
             ]

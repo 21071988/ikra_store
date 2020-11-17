@@ -22,7 +22,7 @@
         <input accept="text/rtf,text/html,text/plain,application/pdf" value='5%' name='lk__prop__sale'>
 
         <p class="lk__prop">до следующего уровня </p>
-        <input accept="text/rtf,text/html,text/plain,application/pdf" value='27 282 Р' name='lk__prop__amount'>
+        <p class="lk__prop__amount">27 287Р</p>
 
         <p class="lk__prop">адрес доставки</p>
         <input accept="text/rtf,text/html,text/plain,application/pdf" value='Иванова' placeholder='заполните это поле' name='lk__prop__adress'>
