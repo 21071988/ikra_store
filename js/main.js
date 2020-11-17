@@ -672,7 +672,7 @@ let lkFormInputs = Array.from(lkFormInputsAr);
 
 for(let i=0; i< lkFormInputs.length; i++){ 
   if(lkFormInputs[i].value){
-    lkFormInputs[i].style.width = `${lkFormInputs[i].value.length*11}px`;
+    lkFormInputs[i].style.width = `${lkFormInputs[i].value.length*11+20}px`;
   }
   else{
     lkFormInputs[i].style.width = `70%`;

@@ -25,7 +25,7 @@
         <p class="lk__prop__amount">27 287Р</p>
 
         <p class="lk__prop">адрес доставки</p>
-        <input accept="text/rtf,text/html,text/plain,application/pdf" value='Иванова' placeholder='заполните это поле' name='lk__prop__adress'>
+        <input class='lk__adress__input' accept="text/rtf,text/html,text/plain,application/pdf" value='' placeholder='заполните это поле' name='lk__prop__adress'>
       <br>
       <button id='submit__lk__form' type="submit">Обновить данные</button>
       <div id="answer__message"></div>
