@@ -68,7 +68,7 @@
         <hr>
         <span>тип изделия</span>
       
-        <button type='submit' id='show__items__button'>Показать</button>
+        <!-- <button type='submit' id='show__items__button'>Показать</button> -->
         
       </div>
       <div class="top__menu__chooses">

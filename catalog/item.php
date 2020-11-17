@@ -106,12 +106,24 @@
           </div>
         </div>
 
-        <div class="item__helpfull__links">
-          <a href="/info">оплата</a>
-          <a href="/info">доставка</a>
-          <a href="/info">возврат</a>
+        <div class="info">
+          <div class="info__header">
+              <a class="nav-link active">Оплата</a>
+              <a class="nav-link">Доставка</a>
+              <a class="nav-link">Возврат</a>
+              <a class="nav-link">Возврат</a>
+              </div>
+
+          <div class="info__text">
+            <p id="text1">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod vero repudiandae animi quibusdam dicta blanditiis nobis laborum quos, soluta doloribus pariatur debitis placeat repellendus ipsam voluptatum officia sint asperiores iure obcaecati nostrum rem eos architecto? Eligendi explicabo cum quisquam ducimus.</p>
+            <p id="text2">
+            Второооооой consectetur adipisicing elit. Quod vero repudiandae animi quibusdam dicta blanditiis nobis laborum quos, soluta doloribus pariatur debitis placeat repellendus ipsam voluptatum officia sint asperiores iure obcaecati nostrum rem eos architecto? Eligendi explicabo cum quisquam ducimus.</p>
+            <p id="text3">
+            Это третий текст в списке.</p>
+          </div>
         </div>
-    </div>
+            </div>
   </div>
 
   <h2 class='interesting'>с этим товаром смотрят</h2>

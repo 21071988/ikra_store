@@ -2,7 +2,7 @@ $(document).ready(function(){
     // main page slider
         $('.most__popular__slider').slick({
             infinite: true,
-            slidesToShow: 3,
+            slidesToShow: 4,
             slidesToScroll: 1,
             responsive: [
               {
@@ -101,7 +101,14 @@ $(document).ready(function(){
             slidesToShow: 4,
             slidesToScroll: 1,
             rows:2,
-            arrows:false
+            arrows:false,
+            responsive:[
+              {
+                breakpoint: 768,
+                rows:1
+              } 
+            ]
+
         });
 
       
@@ -217,7 +224,7 @@ for(let i = 0; i< labelArray.length; i++){
 }
 //choosing size in catalog
 let labelC = document.querySelectorAll('.possibly__active');
-let catalogShowBtn = document.getElementById('show__items__button');
+let catalogShowBtn = document.getElementById('show__items__button__mobile');
 let catalogShownBtnMobile = document.getElementById('show__items__button__mobile');
 labelCArray = Array.from(labelC);
 for(let i = 0; i< labelCArray.length; i++){
@@ -320,7 +327,7 @@ let texts = document.querySelectorAll('.info__text p');
 tabsArray = Array.from(tabs);
 textsArray = Array.from(texts);
 for(let i = 0; i< tabsArray.length; i++){
-  let textsHeight = textsArray[3].clientHeight;
+  let textsHeight = textsArray[2].clientHeight;
   textsDiv[0].style.height = textsHeight +'px';
   tabsArray[i].addEventListener('click',function(){
       var current = document.getElementsByClassName("active");
@@ -434,12 +441,12 @@ window.onload = function(){
 // hearts
 
 littleHeartAr = document.querySelectorAll('.cls-heart');
-littleHeart = Array.from(littleHeartAr)
+littleHeart = Array.from(littleHeartAr);
 for(let i=0;i<littleHeart.length;i++){
   littleHeart[i].addEventListener('click',(e)=>{
    littleHeart[i].style.fill = 'black';
    littleHeart[i].nextSibling.nextSibling.classList.add('beating__heart__c');
-    e.preventDefault();
+    (littleHeart[i].classList.contains('header__heart') ? 1 : e.preventDefault());
   });
   }
 

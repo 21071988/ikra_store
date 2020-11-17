@@ -259,7 +259,7 @@ footer{
 }
 .footer__div{
 	text-align: left;
-	height: 100%;
+	// height: 100%;
 	flex:1;
 	&:first-child{
 		.column;
@@ -603,6 +603,16 @@ footer{
 	flex:1;
 	.column;
 	.f15;
+	.info{
+		width: 100%;
+		.info__header{
+			.f;
+			justify-content: flex-start;
+			a{
+				margin-right: @m;
+			}
+		}
+	}
 }
 .catalog__pages a{
 	width: 100%;
@@ -905,6 +915,7 @@ footer{
 	top:20%;
 	right: 0;
 	width: 50px;
+	overflow: visible;
 }
 
 // .nav-tabs{
@@ -1020,7 +1031,7 @@ footer{
 }
 .brands__slider__wrapper{
 	position: relative;
-	height: 100vh;
+	min-height: 100vh;
 	overflow: hidden;
 	.allcenter;
 	svg{
@@ -1421,11 +1432,31 @@ label{
 .item__mobile__slider{
 	display: none !important;
 }
+#show__items__button__mobile{
+	.trans4;
+	opacity: 0;
+}
+
+.new__btn{
+button{
+	border-bottom:2px solid @bl;
+	font-size: 1.4rem;
+	}
+}
 @media screen and(max-width: 768px) {
 	.first__main__p__text{
 		width: calc(100% - @m2);
 		.fm;
 		margin-bottom: @m2;
+	}
+	.footer__div__two a{
+		margin-bottom:10px;
+	}
+	#showMore{
+		margin-left:20%;
+	}
+	.brands__slider__wrapper svg{
+		width: 15px;
 	}
 	.checking__order{
 		width: 94%;
@@ -1469,7 +1500,7 @@ label{
 	}
 	footer{
 		.column;
-		min-height: auto;
+		min-height: 60vh;
 	}
 	.double__sliders{
 		.column;
@@ -1874,14 +1905,9 @@ label{
 	.new__btn{
 		margin: 0 auto;
 		text-align: center;
-		button{
-			border-bottom:2px solid @bl;
-		}
+		
 	}
-	#show__items__button__mobile{
-		.trans4;
-		opacity: 0;
-	}
+
 	.item__wrapper{
 		padding:0 @m;
 	}
